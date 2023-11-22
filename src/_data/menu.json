@@ -1,11 +1,15 @@
 [
     {
-        "label": "About",
-        "url": "/about"
+        "label": "Portfolio",
+        "url": "https://rubengr.es"
     },
     {
-        "label": "Tag List",
+        "label": "Tags",
         "url": "/tags"
+    },
+    {
+        "label": "About",
+        "url": "/about"
     },
     {
         "label": "GitHub",
