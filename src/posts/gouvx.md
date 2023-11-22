@@ -132,7 +132,7 @@ I use HuggingFace’s inference endpoints for the embeddings. It's really simple
  
 - **Database:** Hosted on Weaviate Cloud, I'm using their free tier sandbox one since I can't afford the 25€/month... but hey it works!
 
-- **LLM:** ChatGPT! There is other models out there that could do the trickk but ChatGPT is cheap is simple to use.
+- **LLM:** ChatGPT! There is other models out there that could do the trick but ChatGPT is cheap is simple to use.
 
 This cloud first design scale very easily (within limits of my credit card) and if no one uses the service I’m not paying a penny!
 
