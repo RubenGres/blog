@@ -7,12 +7,12 @@ pagination:
     alias: paged
 permalink: "tags/{{ paged.tagName }}/{% if paged.number > 1 %}{{ paged.number }}/{% endif %}index.html"
 eleventyComputed:
-    title: "Tagged with \"{{ paged.tagName | capitalize }}\""
+    title: "Tagged with \"{{ paged.tagName }}\""
 ---
 
 <div class="mb-8 text-center">
     <h3 class="text-xl font-medium text-slate-700 my-0">Tagged with</h3>
-    <h1 class="text-4xl font-medium leading-normal mt-0">{{ paged.tagName | capitalize }}</h1>
+    <h1 class="text-4xl font-medium leading-normal mt-0">{{ paged.tagName }}</h1>
 </div>
 <div class="flex flex-wrap -mx-2">
     {% include "partials/post-grid.njk" %}

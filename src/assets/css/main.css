@@ -16,3 +16,10 @@
     clip-path: inset(1px);
   }
 }
+
+img {margin: auto;}
+img[alt=small] { width: 100px; }
+img[alt=medium] { width: 200px; }
+img[alt=large] { width: 250px; }
+img[alt=xlarge] { width: 400px; }
+img[alt=xxlarge] { width: 700px; }
