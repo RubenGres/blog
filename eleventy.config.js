@@ -22,7 +22,7 @@ module.exports = (config) => {
       input: 'src',
       output: 'dist'
     },
-    // pathPrefix: "/subfolder/",
+    pathPrefix: "/blog/",
     templateFormats: ['md', 'njk', 'html'],
     dataTemplateEngine: 'njk',
     markdownTemplateEngine: 'njk'
