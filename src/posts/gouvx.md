@@ -16,7 +16,7 @@ I’ve always dreaded working with the administration, just thinking about it ma
 
 And just like that the [GouvX assistant](https://gouvx.fr), was born!
 
-![xlarge](/assets/img/cyborg_marianne.png)
+![xlarge](/blog/assets/img/cyborg_marianne.png)
 
 # Some context
 
@@ -32,7 +32,7 @@ I wanted the first project for gouvx to be an assistant and, since I have some k
 
 And hopefully get rid of administrative paralysis along the way…
 
-![large](/assets/img/dreading.png)
+![large](/blog/assets/img/dreading.png)
 
 # Gathering the data
 
@@ -40,7 +40,7 @@ I started the project by crawling and scraping [service-public.fr](http://servic
 
 To better picture what this part does, imagine a small spider going around the website, following links and hoarding text content as they go. When the spider visited all the pages and has no where else to go, I am left with a huge pile of HTML pages.
 
-![large](/assets/img/spider.png)
+![large](/blog/assets/img/spider.png)
 
 To make the text a bit more compact while keeping the structure, I made my own scraper specially for service-public that would convert the HTML to markdown. The pages mostly followed the same layout so this part was pretty straight forward
 
@@ -54,7 +54,7 @@ A text embedding is a n-dimensional vector that capture the semantic sense of a 
 
 To help clear things out, take a look at this example. Here the embeddings are represented in two dimensions but in reality we are working with more than a thousand. Notice how you can make out “clusters” of words of the same category.
 
-![none](/assets/img/embeds.png)
+![none](/blog/assets/img/embeds.png)
 
 Since we are processing text in french, I used a specialized model called **sentence-camembert-large** that was created to process french texts. The input size of the model was 512 tokens (or around 300 words) so I had to split my articles to fit within this context window.
 
@@ -97,7 +97,7 @@ VOUS DEVEZ ABSOLUMENT RESPECTER LES REGLES SUIVANTES:
 
 And… that’s it! Now we just have to let the LLM do its magic, and **GouvX** is born !
 
-![large](/assets/img/gouvx_bot.png)
+![large](/blog/assets/img/gouvx_bot.png)
 
 # So… how good is it ?
 
@@ -146,7 +146,7 @@ With this project I not only wanted to help people navigate the french law but I
 
 # How to contribute to the project
 
-![xxlarge](/assets/img/end.png)
+![xxlarge](/blog/assets/img/end.png)
 
 The whole codebase is opensource and you can find it [here on GitHub](https://github.com/gouvx). If you want to participate feel free to make a pull request or create an issue. Right now we need to scrape, embed and include more government websites.
 
