@@ -34,11 +34,16 @@ And hopefully get rid of administrative paralysis along the way…
 
 ![large](/blog/assets/img/dreading.png)
 
+# Goal of the project
+
+The end foal of this project is to build a ✨**Retrival Augmented Generation (RAG)** ✨ system. Basically I want the user to ask my bot about something and the bot will search its database for relevant documents.
+From the gathered info it shoud be able to give a precise reply based on known sources.
+
 # Gathering the data
 
 I started the project by crawling and scraping [service-public.fr](http://service-public.fr), the central portal for public services.  
 
-To better picture what this part does, imagine a small spider going around the website, following links and hoarding text content as they go. When the spider visited all the pages and has no where else to go, I am left with a huge pile of HTML pages.
+To better picture what this part does, imagine a small spider going around the website, following links and hoarding text as they go. When the spider visited all the pages and has no where else to go, I am left with a huge pile of HTML pages.
 
 ![large](/blog/assets/img/spider.png)
 
