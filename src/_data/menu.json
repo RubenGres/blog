@@ -1,14 +1,18 @@
 [
     {
+        "label": "Blog",
+        "url": "."
+    },
+    {
         "label": "Portfolio",
         "url": "https://rubengr.es"
     },
     {
-        "label": "Tags",
-        "url": "/tags"
-    },
-    {
         "label": "Contact",
         "url": "/about"
+    },
+    {
+        "label": "Resume",
+        "url": "../resume.html"
     }
 ]
