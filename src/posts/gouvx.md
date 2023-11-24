@@ -36,7 +36,7 @@ And hopefully get rid of administrative paralysis along the way…
 
 # Goal of the project
 
-The end foal of this project is to build a ✨**Retrival Augmented Generation (RAG)** ✨ system. Basically I want the user to ask my bot about something and the bot will search its database for relevant documents.
+The end goal of this project is to build a ✨ **Retrival Augmented Generation (RAG)** ✨ system. Basically I want the user to ask my bot about something and the bot will search its database for relevant documents.
 From the gathered info it shoud be able to give a precise reply based on known sources.
 
 # Gathering the data
