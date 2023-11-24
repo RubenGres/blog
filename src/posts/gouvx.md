@@ -8,13 +8,13 @@ tags:
     - LLM
 ---
 
-TL;DR: I built [GouvX](https://gouvx.fr), a chatbot to search service-public.fr
+TL;DR: I built [GouvX](https://www.gouvx.fr), a chatbot to search service-public.fr
 
 # Where the idea came from
 
 I’ve always dreaded working with the administration, just thinking about it makes me sweaty and nauseous. One day while I was procrastinating another administrative task, I got the idea to build an assistant that could look up the internet for me and help me go through this mess. So instead of filling paperwork, I spent weeks building an AI to help with my administrative anxiety.  
 
-And just like that the [GouvX assistant](https://gouvx.fr), was born!
+And just like that the [GouvX assistant](https://www.gouvx.fr), was born!
 
 ![xlarge](/blog/assets/img/cyborg_marianne.png)
 
@@ -24,7 +24,7 @@ Recently I’ve read about "g0v.tw" (read gov zero), the Taiwan initiative for a
 
 From there I fell into a rabbit hole of civic tech and open governments initiatives that led me to projects like [Decidim](https://decidim.org) and [DemocracyOS](http://democracyos.eu).
 
-Inspired by thoses movement, I figured we could use some of this energy here in France and tried to claim the [g0uv.fr](http://g0uv.fr) domain. But it was already taken... (If it's yours, I hope you'll make good use of it). After some consideration I settled for [gouvx.fr](http://gouvx.fr). The idea is that you can add an “x” to any existing government website to be redirected to the corresponding page.
+Inspired by thoses movement, I figured we could use some of this energy here in France and tried to claim the [g0uv.fr](http://g0uv.fr) domain. But it was already taken... (If it's yours, I hope you'll make good use of it). After some consideration I settled for [gouvx.fr](http://www.gouvx.fr). The idea is that you can add an “x” to any existing government website to be redirected to the corresponding page.
 
 It's not as techy as g0uv and it sounds a bit like an erotic website. (Could have been worse, at least it's not called x.com) 
 
