@@ -56,35 +56,35 @@ C'est ici qu'on essaie de parler aux ordinateurs 🦜
 
 Je ne peux pas envoyer du texte directement à mon modèle. Ce sont des oridnateurs après tout, ils ne parlent qu'avec des chiffres. C'est ici que les embeddings entrent en jeu!
 
-A text embedding is a n-dimensional vector that capture the semantic sense of a sentence. This means that when two words are close together in meaning, their vectors are close in embedding space.
+Un embedding textuel est une vecteur de dimension n qui capture le sens sémantique d'une phrase. Ce qui veut dire que si deux mots ont un sens proche, leurs représentations vectorielle seront également proches l'une de l'autre.
 
-To help clear things out, take a look at this example. Here the embeddings are represented in two dimensions but in reality we are working with more than a thousand. Notice how you can make out “clusters” of words of the same category.
+Pour vous aider à vous représenter cette idée, regardez cet exemple. Ici les embeddings sont ramenés à deux dimensions, dans la réalité on travaille avec plus d'un millier de dimensions! On observe bien des "groupes" de mots qui se touvent dans le même champ lexical. 
 
 ![none](/blog/assets/img/embeds.png)
 
-Since we are processing text in french, I used a specialized model called **sentence-camembert-large** that was created to process french texts. The input size of the model was 512 tokens (or around 300 words) so I had to split my articles to fit within this context window.
+Vu qu'on va traiter du texte en Français, j'ai utilisé un modèle spécialisé appellé  **sentence-camembert-large**. La taille d'entrée du modèle est de 512 tokens (environ 300 mots) donc j'ai du diviser mes articles pour qu'ils rentrent dans cette taille de contexte. 
 
-Each element is therefore a chapter in a bigger article. I computed the embedding of every one of theses and got with around 100k unique data points. Picture the above figure with entire articles instead of words, and a hundred thousand of them.
+Chaque élément est alors un chapitre dans un article complet. J'ai calculé les meddings de chacun de ceux-ci et j'ai un total d'environ 100,000 points uniques. Imaginez l'image ci dessus avec des articles entier à la place des mots, et plus de cent milles points.
 
-# Storing data with LLM in mind
+# Stocker des données en pensant aux LLMs
 
-Now that I have my gazillion points, I need to throw them in a database for efficient querying.
+Maintenant que j'ai tous mes points, j'ai besoin de les stocker dans un base de données pour les lires efficacement.
 
-I’ve always been in terrified of the sheer amount of database paradigms there is out there (hierarchical, network, object oriented, NoSQL, relational, ...) With the rise of LLM based applications, another type of databases is bringing attention to itself: *vector-based databases*.
+J'ai toujours été impressionné par le nombre de paradigmes de base de données qui existent dans la nature (hierarchique, par réseau, orientée objet, NoSQL, relationnelle, ...) Avec la popularité croissante des applications basées sur LLM, un autre type de base de données attire tous les regards: *les bases de données vectorielles*
 
-The main principle here is that every entry in your database has an associated vector and you can efficiently query data based on its spatial representation. For this project I went with weaviate because it’s open source and has a built in cloud service.
+Le principe est que pour chaque élément dans la base de données, un vecteur y est associé et permet de récupérer les données efficacement dans l'espace de représentation. Pour gouvx, j'ai choisi d'utiliser weaviate parceque le projet est open source et qu'il dispose d'un offre cloud.
 
-Whenever I want to gather documents that may answer the user question, I compute the question's embedding and return the three closest points. This should (hopefully) be all the context we need to answer the question.
+Quand j'ai besoin de collecter les documents qui pourraient répondre à la question de l'utilisateur, je calcule l'embedding de la question et je renvoie les trois points les plus proches dans la base de données. Celà devreait (normalement) être suffisant pour répondre à la question.
 
-A limitation of this approach is that by embedding the question directly I'm also including "parasites" tokens (ponctuation, greetings, etc.). But from my tests it was good enough!
+Une des limitations de cette approche est que j'utlise l'embedding de la question directement. Ce qui contient aussi des tokens "parasites" (ponctuation, formulation, etc.) mais d'après mes tests c'est suffisamment peu impactant pour fonctionner quand même. 
 
-# The fun part: building the prompt
+# La partie fun, construire son prompt
 
-Now that’s where the magic happens, we are going to give orders to our model.
+C'est ici qu'à lieu la magie, on va donner des ordres à notre modèle! 
 
-The principle here is to build a prompt from instructions of what we expect as a result, a series of document gathered from our database and finally the user question.
+Le principe est de construire un prompt avec les instructions de ce qu'on attend comme résultat, une série de documents piochés dans la base de données et, pour finir, la question de l'utilisateur.
 
-The instructions that we’re giving to our model look something like this (pardon my French):
+Voici les instructions que l'on donne à notre modèle:
 
 ```
 Vous êtes GouvX, un assitant virtuel bienveillant et serviable permettant
@@ -101,11 +101,11 @@ VOUS DEVEZ ABSOLUMENT RESPECTER LES REGLES SUIVANTES:
 - En repondant à une question, RESPECTER LA CONVENTION DE NOMMAGE: "Selon service-public.fr [...]"
 ```
 
-And… that’s it! Now we just have to let the LLM do its magic, and **GouvX** is born !
+Et... voilà! Maintenant on a juste à laisser le LLM faire sa magie, et **GouvX** est né!
 
 ![large](/blog/assets/img/gouvx_bot.png)
 
-# So… how good is it ?
+# Alors... ça vaut quoi?
 
 From initial testing, the bot is surprisingly accurate in its answers. The main issue is that it doesn’t always gather the most useful documents and the information its looking for may exist in another article. I talked about this project to friends and the reception was overwhelming positive. I already have people that have started using it in their daily life.
 
