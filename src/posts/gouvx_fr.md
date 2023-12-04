@@ -107,55 +107,53 @@ Et... voilà! Maintenant on a juste à laisser le LLM faire sa magie, et **GouvX
 
 # Alors... ça vaut quoi?
 
-From initial testing, the bot is surprisingly accurate in its answers. The main issue is that it doesn’t always gather the most useful documents and the information its looking for may exist in another article. I talked about this project to friends and the reception was overwhelming positive. I already have people that have started using it in their daily life.
+De quelques tests initiaux que j'ai pu faire, le bot est étonnament précis dans ses réponses. Le problème principal est qu'il ne collecte pas toujours les meilleurs documents. J'ai un peu partagé ce projet à mon entourage et la réception a été très positive! J'ai déjà des amis qui ont commencé à l'utiliser dans leur quotidien.
 
-Whenever I have a question related to the law, I'm now doing a quick gouvx search as a starting point.
+Quand j'ai une question en rapport avec la loi, j'ai maintenant pris l'habitude de faire une recherche gouvx rapide comme point de départ.
 
-When compared to ChatGPT, for the same question gouvx will be able to answer your question almost every time, be more precise and most importantly redirect you to the official page on [service-public.fr](http://service-public.fr)
+Par rapport à ChatGPT, pour la même question, gouvx sera capable de vous répondre presque à chaque fois, d'être plus précis et surtout de vous rediriger vers la page officielle sur [service-public.fr] (http://service-public.fr).
 
-# Advantages and limitations of this approach
+# Avantages et limitations de cette approche
 
-The main advantage of this method is that I am sure that I won’t hallucinate information, in the worst case scenario I fail to collect the relevant document and gouvx doesn’t answer the question.
+Le principal avantage de cette méthode est que je suis sûr qu'aucune information n'est hallucinée, dans le pire des cas je n'arrive pas à trouver le bon document et gouvx ne répond pas à la question.
 
-Sometimes though, it doesn't grab the right article and answers with false data...
+Parfois par contre il récupère un mauvais article et répond avec de fausses données...
 
-Another limitation is that I’m not keeping up to date with the latest modifications on the website since I collect the data on a given day. I could have used a search query and scrape the first results but it would have taken more time to reply to the user (and admittedly I really wanted to try out weaviate)
+Une autre limitation est que le scrapping étant fait un jour donné, je ne suis pas systématiquement à jour sur le site. J'aurais pu faire une recherche google et récupérer les premiers résultats mais cela aurait pris plus de temps pour répondre à l'utilisateur (et en vrai je voulais essayer Weaviate).
 
-From this method I can use any LLM without having to finetune it. This allows me to switch models easily to keep up the current rate of new models.
+Grâce à cette approche, je peux utiliser n'importe quel LLM sans avoir à faire de finetuning. Et vu le rythme de parution de nouveaux modèles en ce moment, je pourrai aussi remplacer chatGPT par un modèle open source dans le futur.  
 
-## The part where I get technical
+## La partie où je parle technique
 
-**Everything is serverless and scalable**, here are some technical details:
+**Tout est sans serveur et scalable**, voici quelques détails techniques :
 
-- **Hosting:**
-I’m using GitHub pages to host the website, it's free as long as the page is static.
+- **Hébergement:**
+J'utilise GitHub pages pour héberger le site web, c'est gratuit tant que la page est statique.
 
 - **API:**
-A GCP Cloud function that doesn't run when no one needs it.
+L'API est une cloud fonction Google cloud qui ne s'exécute pas quand personne ne l'appelle.
 
 - **Embedding:**
-I use HuggingFace’s inference endpoints for the embeddings. It's really simple to set up but the model can take a bit to load at first. In the future I might set up a small CPU embedding service
- 
-- **Database:** Hosted on Weaviate Cloud, I'm using their free tier sandbox one since I can't afford the 25€/month... but hey it works!
+J'utilise l'endpoint d'inférence HuggingFace pour les embeddings. C'est très simple à mettre en place mais le modèle peut prendre un peu de temps à charger au premier appel. Dans le futur, je pourrais mettre en place un petit service d'embedding CPU.
 
-- **LLM:** ChatGPT! There is other models out there that could do the trick but ChatGPT is cheap is simple to use.
+- **Base de données:** Hébergée sur Weaviate Cloud, j'utilise leur version gratuite (sandbox) car je n'ai pas les moyens de payer les 25€/mois... mais bon, tant que ça marche!
 
-This cloud first design scale very easily (within limits of my credit card) and if no one uses the service I’m not paying a penny!
+- **LLM:** ChatGPT ! Il y a d'autres modèles qui pourraient faire l'affaire mais ChatGPT est bon marché et simple à utiliser.
 
-# Some thoughts on democratic uses of LLM
+Ce design pensé pour le cloud peut monter en charge très facilement (dans les limites de ma carte de crédit) et si personne n'utilise le service, je ne paie pas un seul centime!
 
-I am certain that we are going through a revolution in the way we interact with machines. ChatGPT has been out for less than a year and a lot of people have already integrated in their daily workflow. This technology empowers everyone that can get their hands on it and re-shuffle the cards by letting everyone have an expert by their side at all times.
+# Sur la place des LLM dans la démocratie
 
-Now the biggest challenge we face is trying to keep greedy corporate interest away and build a more open, fairer future where this technology can help lower the bar for digital literacy.
+Je suis persudé que nous sommes en train de vivre une révolution dans la façon dont nous interagissons avec les machines. ChatGPT existe depuis un an maintenant et de nombreuses personnes l'ont déjà intégré dans leur travail quotidien. Cette technologie permet à tous ceux qui y ont accés d'avoir un expert à leur côtés à tout moment, ce qui a de profonds impacts sur notre rapport à l'information.
 
-With this project I not only wanted to help people navigate the french law but I also wanted to prove there is a place for democratic uses for this technology to make more informed decisions.
+Aujourd'hui, le plus grand défi auquel nous sommes confrontés est d'essayer d'éloigner les intérêts financiers des entreprises et de construire un avenir plus ouvert et plus juste où cette technologie peut contribuer à rendre la technologie plus accessible pour le plus grand nombre.
 
-# How to contribute to the project
+Avec ce projet, je voulais non seulement aider les gens à naviguer le droit français, mais aussi prouver qu'il y a une place pour l'utilisation démocratique de ces technologies pour aider à la prise de décision plus éclairée.
 
-![xxlarge](/blog/assets/img/end.png)
+# Comment contribuer ?
 
-The whole codebase is opensource and you can find it [here on GitHub](https://github.com/gouvx). If you want to participate feel free to make a pull request or create an issue. Right now we need to scrape, embed and include more government websites.
+[xxlarge](/blog/assets/img/end.png)
 
-If this project sounds interesting and you want to contact me, you can send me a mail at *ruben.gres@proton.me* and I will gladly reply !
+L'ensemble du code est opensource et [sur GitHub](https://github.com/gouvx). Si vous voulez participer, n'hésitez pas à faire une pull request ou à créer une issue. Si ce projet vous semble intéressant et que vous souhaitez me contacter, vous pouvez m'envoyer un mail à *ruben.gres@proton.me* et je vous répondrai avec plaisir !
 
 À un futur avec des IA plus utiles 🤖
