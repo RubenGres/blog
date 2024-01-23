@@ -1,5 +1,5 @@
 ---
-title: "How to Make Art Using High School Algebra"
+title: "How to Paint Using High School Maths and a GPU"
 date: 2024-01-21
 thumb: "shadertoy.jpg"
 tags:
