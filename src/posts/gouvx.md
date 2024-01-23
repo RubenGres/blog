@@ -1,5 +1,5 @@
 ---
-title: "I hate paperwork so I built an AI to help"
+title: "I Hate Paperwork So I Built An AI To Help"
 date: 2023-11-21
 thumb: "gouvx.png"
 tags:
@@ -135,7 +135,7 @@ A GCP Cloud function that doesn't run when no one needs it.
 - **Embedding:**
 I use HuggingFace’s inference endpoints for the embeddings. It's really simple to set up but the model can take a bit to load at first. In the future I might set up a small CPU embedding service
  
-- **Database:** Hosted on Weaviate Cloud, I'm using their free tier sandbox one since I can't afford the 25€/month... but hey it works!
+- **Database:** Hosted on Weaviate Cloud, I'm using their free tier sandbox one since I'm to cheap for the 25€/month... but hey it works!
 
 - **LLM:** ChatGPT! There is other models out there that could do the trick but ChatGPT is cheap is simple to use.
 

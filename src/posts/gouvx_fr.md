@@ -136,7 +136,7 @@ L'API est une cloud fonction Google cloud qui ne s'exécute pas quand personne n
 - **Embedding:**
 J'utilise l'endpoint d'inférence HuggingFace pour les embeddings. C'est très simple à mettre en place mais le modèle peut prendre un peu de temps à charger au premier appel. Dans le futur, je pourrais mettre en place un petit service d'embedding CPU.
 
-- **Base de données:** Hébergée sur Weaviate Cloud, j'utilise leur version gratuite (sandbox) car je n'ai pas les moyens de payer les 25€/mois... mais bon, tant que ça marche!
+- **Base de données:** Hébergée sur Weaviate Cloud, j'utilise leur version gratuite (sandbox) par ce que je suis trop radin pour payer les 25€/mois... mais bon, tant que ça marche!
 
 - **LLM:** ChatGPT ! Il y a d'autres modèles qui pourraient faire l'affaire mais ChatGPT est bon marché et simple à utiliser.
 
