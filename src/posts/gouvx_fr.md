@@ -146,7 +146,7 @@ Ce design pensé pour le cloud peut monter en charge très facilement (dans les 
 
 Je suis persudé que nous sommes en train de vivre une révolution dans la façon dont nous interagissons avec les machines. ChatGPT existe depuis un an maintenant et de nombreuses personnes l'ont déjà intégré dans leur travail quotidien. Cette technologie permet à tous ceux qui y ont accés d'avoir un expert à leur côtés à tout moment, ce qui a de profonds impacts sur notre rapport à l'information.
 
-Aujourd'hui, le plus grand défi auquel nous sommes confrontés est d'essayer d'éloigner les intérêts financiers des entreprises et de construire un avenir plus ouvert et plus juste où cette technologie peut contribuer à rendre la technologie plus accessible pour le plus grand nombre.
+Aujourd'hui, le plus grand défi auquel nous sommes confrontés est d'essayer d'éloigner les intérêts financiers des entreprises et de construire un avenir plus ouvert et plus juste où cette technologie peut contribuer à rendre la connaissance plus accessible pour le plus grand nombre.
 
 Avec ce projet, je voulais non seulement aider les gens à naviguer le droit français, mais aussi prouver qu'il y a une place pour l'utilisation démocratique de ces technologies pour aider à la prise de décision plus éclairée.
 
