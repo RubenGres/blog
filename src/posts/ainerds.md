@@ -1,5 +1,5 @@
 ---
-title: "What academics owe to horny online nerds"
+title: "What academics owe to horny nerds online"
 date: 2024-05-15
 thumb: "waifu.jpg"
 tags:
@@ -7,9 +7,9 @@ tags:
     - research
 ---
 
-For the past few months the LLM community are excited with the adeve nt of [mergekit](https://github.com/arcee-ai/mergekit) that allow the merging of LLM. [The paper that introduced this method for LLM](https://arxiv.org/abs/2306.01708) failed to mention that there is another – albeit non academic – community that did not wait for this paper to merge models: StableDiffusion finetuning hobbyists, specifically on the website [CivitAI](https://civitai.com/).
+For the past few months the LLM community are excited with the advent of [mergekit](https://github.com/arcee-ai/mergekit) that allow the merging of LLM. [The paper that introduced this method for LLM](https://arxiv.org/abs/2306.01708) failed to mention that there is another – albeit non academic – community that did not wait for this paper to merge models: StableDiffusion finetuning hobbyists, specifically on the website [CivitAI](https://civitai.com/).
 
-Most researchers never took interest in theses obscure communities even though they play a major role in pushing the research and getting people interesed in machine learning. I think the academic world could greatly benefit from keeping an eye on what thoses communities are up to. This article is a tribute to theses ethically questionnable communities.
+Most researchers never took interest in theses obscure communities even though they play a major role in pushing the research and getting people interesed in machine learning. I think the academic world could greatly benefit from keeping an eye on what thoses people are up to. This article is a tribute to theses ethically questionnable communities.
 
 # CivitAI
 
@@ -33,7 +33,10 @@ This technique is now so widespread that Hollywood took interest into it, in the
 
 In the end, this user with questionable ethics started a whole new field of research from their technique and coined the term deepfake that is broadly used today.
 
-# Waifu2x
+
+# Anime research
+
+## Waifu2x
 
 In 2015 the best upscaling algorithm was not created by Google, Microsoft or any other GAFAM. It called Waifu2x and the logo was a cute anime girl with blue hair. If you're not familiar with internet lingo, a waifu is a girl from a manga or anime that is idealized by fans who are attracted to her. Some people develop relationships with their waifu.
 
@@ -47,13 +50,22 @@ github: nagadomi
 
 ```#TODO complete this```
 
-# Anime research
+## reddit communities
 
-``` #TODO complete this ```
+<!---
+#TODO complete this talking about:
+https://www.thiswaifudoesnotexist.net
+DeepCreamPy: censorship removal
+https://www.reddit.com/r/AnimeResearch
+
+they've been following diffusion models since the beginning and moved from stylegan quickly
+--->
 
 Anime research is a subreddit that focuses on machine learning applied to anime.
 There is currently almost four thousand people following the page, so it is a relatively small community, their main goal is to create decensoring model to unblur genitals in hentais.
 There is also a subreddit dedicated 
+
+While technically not NSFW, I would not recommend clicking that link if you are currently in any kind of open office. You've been warned.
 
 
 # Final thoughts
