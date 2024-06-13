@@ -19,6 +19,13 @@ Their task turned out to be so successful that at the time of writing this artic
 
 ![](/blog/assets/img/evaluation-of-the-latent-horniness-of-the-most-popular.webp)
 
+# PonyDiffusion
+
+"At the heart of the issue, they appear to dismiss Pony as merely a (perhaps low-effort) niche-focused fine-tune, and they seem uninterested in my technical efforts."
+https://civitai.com/articles/5671/towards-pony-diffusion-v7-i-mean-v69
+
+Widely used model that started from MyLittlePony community
+
 <center><b>
 There is a CLEAR bias towards female character, nudity and NSFW content in all thoses models
 </b></center>
@@ -61,6 +68,7 @@ https://www.reddit.com/r/AnimeResearch
 they've been following diffusion models since the beginning and moved from stylegan quickly
 --->
 
+There is a lot of communities on reddit too 
 Anime research is a subreddit that focuses on machine learning applied to anime.
 There is currently almost four thousand people following the page, so it is a relatively small community, their main goal is to create decensoring model to unblur genitals in hentais.
 There is also a subreddit dedicated 
