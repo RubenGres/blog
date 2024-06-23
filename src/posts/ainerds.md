@@ -7,24 +7,29 @@ tags:
     - research
 ---
 
-For the past few months the LLM community are excited with the advent of [mergekit](https://github.com/arcee-ai/mergekit) that allow the merging of LLM. [The paper that introduced this method for LLM](https://arxiv.org/abs/2306.01708) failed to mention that there is another – albeit non academic – community that did not wait for this paper to merge models: StableDiffusion finetuning hobbyists, specifically on the website [CivitAI](https://civitai.com/).
+For the past few months the LLM community are excited with the advent of [mergekit](https://github.com/arcee-ai/mergekit) that allow the merging of LLM. [The paper that introduced this method for LLM](https://arxiv.org/abs/2306.01708) failed to mention that there is another – albeit non academic – community that did not wait for this paper to merge machine learning models: StableDiffusion finetuning hobbyists, specifically on the website [CivitAI](https://civitai.com/).
 
-Most researchers never took interest in theses obscure communities even though they play a major role in pushing the research and getting people interesed in machine learning. I think the academic world could greatly benefit from keeping an eye on what thoses people are up to. This article is a tribute to theses ethically questionnable communities.
+Most researchers never took interest in theses communities even though they play a significant role in pushing the research and getting people in machine learning. I'm sure the academic world could greatly benefit from keeping an eye on what they are up to. This article is a tribute to theses ethically questionnable communities.
 
 # CivitAI
 
-CivitAI is a model sharing website that allow users to share their finetuned model of StableDiffusion. This way you can find models trained on specific artist styles or optimized to have very realistic results. The website ALLOWS for Not Safe For Work (NSFW) content, so if you decide to take a look for yourself be prepared to encounter many naked, big brested anime girls. Amongst this turmoil, some users decided to create the ultimate hentai model by fusing multiple existing models. Sounds familiar?
+CivitAI is a model sharing website that allow users to share their finetuned model of StableDiffusion. This way you can find models trained on specific artistic styles or optimized to have realistic results. The website **ALLOWS** for Not Safe For Work (NSFW) content, so if you decide to take a look for yourself be prepared to encounter many naked, big brested anime girls. Amongst this turmoil, some users decided to create the ultimate hentai model by merging multiple existing models. Sounds familiar?
 
-Their task turned out to be so successful that at the time of writing this article, the stable diffusion model that yields the best results for anime style is a merge of different models, including NSFW. Now we face a very strange problem where all the models that we ave are heavily biased towards nudity, which you may consider a bug or a feature depending on what you are working on. [PRNGAppreciation looked into this issue](https://www.reddit.com/r/StableDiffusion/comments/12huyk4/evaluation_of_the_latent_horniness_of_the_most/) and compared *latent hornyness* of popular anime style models:
+Their task turned out to be so successful that at the time of writing this article, the stable diffusion model that yields the best results for anime style is a merge of different models, including NSFW. Now we face a very strange problem where all the models that we ave are heavily biased towards nudity, which, you might consider a bug or a feature depending on what you are working on. [Reddit user PRNGAppreciation looked into this issue](https://www.reddit.com/r/StableDiffusion/comments/12huyk4/evaluation_of_the_latent_horniness_of_the_most/) and compared *latent hornyness* of popular anime style models on the website:
 
 ![](/blog/assets/img/evaluation-of-the-latent-horniness-of-the-most-popular.webp)
 
+I used to use AnythingV5 quite a while ago and clearly noticed the biases. I since moved to Dreamshaper4 for my go-to model when [Bernat](https://cunicode.com) intruced me to it on [wtfood.eu](wtfood.eu), and the difference is really noticeable.
+
 # PonyDiffusion
+
+One of the model that emerged from the CivitAI community is PonyDiffusion. The model what first created by member of the MyLittlePony (MLP) community and trained on MLP fan art. The model quickly became the most popular model on CivitAI.
+
+PonyDiffusion is a interesting example for a few reasons, besides from its curious origin the author often writes blog explaining their work and approach. Notably they spent multiple weeks straight [scoring >30k images by hand](https://civitai.com/articles/4248/what-is-score9-and-how-to-use-it-in-pony-diffusion) to teach the model human preferences.
 
 "At the heart of the issue, they appear to dismiss Pony as merely a (perhaps low-effort) niche-focused fine-tune, and they seem uninterested in my technical efforts."
 https://civitai.com/articles/5671/towards-pony-diffusion-v7-i-mean-v69
 
-Widely used model that started from MyLittlePony community
 
 <center><b>
 There is a CLEAR bias towards female character, nudity and NSFW content in all thoses models
