@@ -8,11 +8,19 @@
         "url": "https://rubengr.es"
     },
     {
-        "label": "Contact",
-        "url": "/about"
+        "label": "Publications",
+        "url": "https://rubengr.es/publications"
+    },
+    {
+        "label": "Teaching",
+        "url": "https://rubengr.es/teaching"
     },
     {
         "label": "Resume",
-        "url": "https://rubengr.es/resume.html"
+        "url": "https://rubengr.es/resume"
+    },
+    {
+        "label": "Contact",
+        "url": "https://rubengr.es/contact"
     }
 ]
