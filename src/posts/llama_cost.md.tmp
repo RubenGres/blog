@@ -1,0 +1,89 @@
+---
+title: "Watt Does It Take to Train a LLaMA model?"
+date: 2024-05-15
+thumb: "llama_cost.jpg"
+tags:
+    - LLM
+    - ecology
+---
+
+# Introduction
+
+# That one article with cars and gpt2
+https://www.technologyreview.com/2019/06/06/239031/training-a-single-ai-model-can-emit-as-much-carbon-as-five-cars-in-their-lifetimes/
+
+This is what I had in mind when talking about llm ecological print, but things changed since then...
+How many cars would it take now ?
+
+# Meta being open
+
+Steals your data but is open about how lol
+Meta Commitment to open source let us have insight
+
+Quick tangent on open sourcing ai models => to reproduce we need:open data, open weights, open code
+most open source model are open weigths only: StableDiffusion, Mistral, ...
+
+With the release of Llama3.1 we have a 90 page paper with LOTS of details
+
+# What we learn from the paper
+
+LLama 1 and 2 were trained on the supercluster
+https://ai.meta.com/blog/ai-rsc/
+
+But this "superscluster" is too small now
+https://engineering.fb.com/2024/03/12/data-center-engineering/building-metas-genai-infrastructure/
+
+"Llama 3 405B is trained on up to 16K H100 GPUs, each running at 700W TDP with 80GB HBM3,
+using Meta’s Grand Teton AI server platform (Matt Bowman, 2022). Each server is equipped with eight GPUs
+and two CPUs"
+
+On when training is resuming after synchronisation of the GPUs:
+"When this happens, it can result in instant fluctuations of power
+consumption across the data center on the order of tens of megawatts, stretching the limits of the power grid.
+This is an ongoing challenge for us as we scale training for future, even larger Llama models."
+
+This table was stolen from ???
+| Model          | Training Time (GPU hours) | Training Power Consumption (W) | Training Location-Based Greenhouse Gas Emissions (tons CO2eq) |
+|----------------|---------------------------|--------------------------------|----------------------------------------------------------------|
+| Llama 3.1 8B   | 1.46M                      | 700                            | 420                                                            |
+| Llama 3.1 70B  | 7.0M                       | 700                            | 2,040                                                          |
+| Llama 3.1 405B | 30.84M                     | 700                            | 8,930                                                          |
+| **Total**      | **39.3M**                  | **700**                        | **11,390**                                                     |
+
+This is without counting the embodied CO2, i.e the cost of manufacturing the data center where this trainin has taken place.
+Let's try to take this into account.
+
+[150 kg of CO2eq / GPU ](https://arxiv.org/pdf/2211.02001)
+
+TODO
+
+# Failures of GPUs
+
+# Inference costs
+We did not even start accounting for inference costs
+
+# Other GAFAMs
+https://www.usinenouvelle.com/article/le-succes-de-l-intelligence-artificielle-fait-bondir-l-empreinte-carbone-des-acteurs-du-secteur.N2213817
+
+Google missing it's goals because of AI carbon costs
+
+# So, what do we do now?
+
+Open Sourcing models to avoid retraining ?
+Limiting inference time by not going straight to an LLM
+Use smaller models when possible
+
+# Future perspectives
+
+Are data center getting better ?
+AI Gen getting more and more popular
+Big tech is focused on building a bigger and better model, and there is no going back
+Do we even need it ? => We have yet to explore what we can do with our current models
+Every company trains it own model, and most are murican
+10 google research = 1 chatgpt call 
+
+# Sources
+https://nathanbaileyw.medium.com/the-carbon-footprint-of-llms-a-disaster-in-waiting-6fc666235cd0
+https://www.usinenouvelle.com/article/le-succes-de-l-intelligence-artificielle-fait-bondir-l-empreinte-carbone-des-acteurs-du-secteur.N2213817
+https://promptengineering.org/llm-open-source-vs-open-weights-vs-restricted-weights/
+https://medium.com/gptalk/is-llama-3-1-really-open-source-73ac220f9aa2

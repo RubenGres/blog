@@ -1,5 +1,5 @@
 ---
-title: "What academics owe to horny nerds online"
+title: "The Waifu Enthusiasts Who Quietly Push AI Forward"
 date: 2024-05-15
 thumb: "waifu.jpg"
 tags:
@@ -42,13 +42,13 @@ While there is no new and more permissive licence, CivitAI is banning SD3 models
 
 # Reddit user "DeepFake"
 
-Nowadays the term deepfake is very common and understood by all, but do you know where that originated from? In 2015 videos of celebrities in very explicit scene started appearing on reddit, posted by an user called "DeepFakes" with no previous post history. People quickly realized that the videos were fake, and the reddit user gave details about the method they used. If you are curious you can find the original post on archive.org **(NSFW, obsviously)**
+Nowadays the term deepfake is very common and understood by most. But the origin of the term and this method is usually less known. In 2015, videos of celebrities in very explicit scene started appearing on reddit, posted by an user called "DeepFakes" with no previous post history. People quickly realized that the videos were fake, and the reddit user gave details about the method they used. If you are curious you can find the original post on archive.org **(very NSFW, obsviously)**
 
 The first papers reproducing this method came soon after and directly cited the reddit user as a source. From there a long list of papers reproducing and improving the method came one after the other and soon arrived are tools that allowed you to create deepfakes really easily with no technical skills.
 
-In this article we will not dive into ethical considerations for letting this kind of tool be widespread on the internet, but there is definitely a discussion to be had.
+We will not dive into ethical considerations for letting this kind of tool be widespread on the internet, but there is definitely a discussion to have around distributions of thoses models and the stakes of open sourcing them.
 
-This technique was so popular that Hollywood took interest into it, in the last Star Wars movies, the studio used deepfakes to let the late Peter Cushing and Carrie Fisher be on screen despite not being in the *alive club*. Now actors are [selling their image](https://www.theinformation.com/articles/dont-put-your-head-in-the-sand-stars-are-quietly-inking-deals-to-license-their-ai-doubles) to train AI to create a virtual clone of themselves instead of actually making the movie.
+This technique became very popular and soon enough Hollywood took interest into it. In the last Star Wars movies the studio used deepfakes to let the late Peter Cushing and Carrie Fisher be on screen despite not being in the *alive club* anymore. Now actors are starting to [sell their image](https://www.theinformation.com/articles/dont-put-your-head-in-the-sand-stars-are-quietly-inking-deals-to-license-their-ai-doubles) to train AI to create a virtual clone of themselves instead of actually making the movie. We're slowly moving toward a society where the actors themselves are being commodified and valued only for their image.
 
 In the end, this user with questionable ethics started a whole new field of research from their technique and coined the term deepfake that is broadly used today.
 

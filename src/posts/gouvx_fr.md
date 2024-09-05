@@ -1,5 +1,5 @@
 ---
-title: "J'ai créé une IA pour aider ma phobie administrative"
+title: "J'ai Créé Une IA Pour Aider Ma Phobie Administrative"
 date: 2023-11-21
 thumb: "gouvx.png"
 tags:
