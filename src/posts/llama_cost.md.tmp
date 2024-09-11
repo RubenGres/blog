@@ -7,28 +7,41 @@ tags:
     - ecology
 ---
 
-# Introduction
+In 2019 — only five years ago — MIT did a study of the cost of AI and arrived at the conclusion that ["Training a single AI model can emit as much carbon as five cars in their lifetimes"](https://www.technologyreview.com/2019/06/06/239031/training-a-single-ai-model-can-emit-as-much-carbon-as-five-cars-in-their-lifetimes/)
 
-# That one article with cars and gpt2
-https://www.technologyreview.com/2019/06/06/239031/training-a-single-ai-model-can-emit-as-much-carbon-as-five-cars-in-their-lifetimes/
+Wait... that's not **that** much is it?
 
-This is what I had in mind when talking about llm ecological print, but things changed since then...
-How many cars would it take now ?
+The simplicity of this number stuck with me and that's what I always had in mind when talking about the carbon cost of generative AI.
 
-# Meta being open
+Now that we're in 2024 and the world is going through an AI craze, how many cars does it take ?
 
-Steals your data but is open about how lol
-Meta Commitment to open source let us have insight
+# Llama 3.1 and its paper
 
-Quick tangent on open sourcing ai models => to reproduce we need:open data, open weights, open code
-most open source model are open weigths only: StableDiffusion, Mistral, ...
+The 23rd July, Meta released its new family of models in the Llama family. This new version, LLama3.1 declines in three versions of different sizes and capabilities: 8B, 70B and 405B.  
 
-With the release of Llama3.1 we have a 90 page paper with LOTS of details
+This new model arrived by storm in the LLM community, and for good reasons: it's the best open source model to date, rivalizing with ChatGPT at the time of release.  
+
+What's particulary interesting is the 90 pages paper released along side the model that go into great technical details on the training, alignement and testing process, enough so that we can start to derive some number from there.
+
+Let's take a closer look and try to figure out how many cars it takes to train Llama 3.1.
+
+# Meta steals your data but is open about research
+
+The metaverse was a flop.
+
+When Meta finally realized this they leaned heavily into AI and started producing open source models to compete against OpenAI. Their strategy is a bit different though and they prefer focusing on applicaitons and allow anyone to use their models, even for commmercial uses.
+
+Meta commitment to open source allow us to have some insight of what it take to train this beast of a model.
+
+TODO Illustration of soggoth
 
 # What we learn from the paper
 
-LLama 1 and 2 were trained on the supercluster
+The first two families of Llama models were trained on Meta's supercluster built in ? //TODO date
+
 https://ai.meta.com/blog/ai-rsc/
+
+LLama 1 and 2 were trained on the supercluster
 
 But this "superscluster" is too small now
 https://engineering.fb.com/2024/03/12/data-center-engineering/building-metas-genai-infrastructure/
