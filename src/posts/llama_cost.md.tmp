@@ -1,57 +1,57 @@
 ---
 
-title: "Training a single AI model can emit as much carbon as ~~five~~ one hundred seventy nine cars in their lifetimes"
+title: "Training a single AI model can emit as much carbon as ~~five~~ one hundred eighty one cars in their lifetimes"
 
 date: 2024-09-25
 
 thumb: "llama_cost.jpg"
 
 tags:
-
     - LLM
-
     - ecology
 
 ---
 
-  In 2019 — only five years ago — MIT did a study of the cost of AI and arrived at the conclusion that ["Training a single AI model can emit as much carbon as five cars in their lifetimes"](https://www.technologyreview.com/2019/06/06/239031/training-a-single-ai-model-can-emit-as-much-carbon-as-five-cars-in-their-lifetimes/)
+Recently I've read the book "Ralentir ou périr. L'économie de la décroissance" by Thimothée Parrique, an essay on degrowth and what an economy not obsessed with growth would look like. In its essay, Thimothée cites a MIT 2019 study that concluded that ["Training a single AI model can emit as much carbon as five cars in their lifetimes"](https://www.technologyreview.com/2019/06/06/239031/training-a-single-ai-model-can-emit-as-much-carbon-as-five-cars-in-their-lifetimes/)
+
+Wait a minute... five cars is not **that** much is it?
 
 Here is a figure from this article comparing common carbon footprints:
 ![[Pasted image 20240925123010.png]]
   
-Wait a minute... five cars is not **that** much is it?
+At the time the study focused on GPT2, the architechture that evolved to be ChatGPT that we now all know. Five cars doesn't sound like that much, how come [Microsoft increased its carbon emissions by 30 per cent since 2020 and Google its greenhouse gas emissions (GHG) by 48 per cent since 2019](https://www.ibanet.org/sustainability-big-techs-ai-push-putting-climate-targets-at-risk)this year and blames machine learning training if the cost of trainin a Large Language Model is only... five cars? It seems like the rules have changed since 2019.
 
-The simplicity of this number stuck with me and that's what I had in mind when talking about the carbon cost of training generative AI models. Than how come [Microsoft increased its carbon emissions by 30 per cent since 2020 and Google its greenhouse gas emissions (GHG) by 48 per cent since 2019 ?](https://www.ibanet.org/sustainability-big-techs-ai-push-putting-climate-targets-at-risk)this year? Clearly it seems like the rules have changed since 2019.
-
-Now that we're in 2024 and the world is going through an AI craze, how many cars does it take to train a state of the art LLM?
-# Meta steals your data but is open about its research
+Now that we're in 2024 and the world is going through an AI craze, let's see how many cars it takes to train a state of the art language model.
+# Meta sells your data but shares its research
 
 The metaverse was a flop.  
 
-When Meta finally realized this they went all in in AI and started making models to compete against OpenAI. Their strategy is a bit different though and they prefer focusing on applications and distribute their model in open source and even allow commmercial uses.
+When Meta finally realized this they went all in in AI and started making models to compete against OpenAI. Their strategy is a bit different though as they prefer focusing on applications and distribute their model in open source, even allowing commmercial uses.
 
-Anyone - with a good enough computer - can download the latest state of the art open source model, download the research paper and learn how Meta approaches building their LLM. Meta commitment to open source allow us to have some insight of what it take to train a [stochastic ~~parrot]~~(https://en.wikipedia.org/wiki/Stochastic_parrot) [soggoth](https://www.lesswrong.com/posts/yjzW7gxk2h7bBs2qr/the-meaning-of-shoggoth-ai-memes). 
+Anyone (or anyone with a good enough computer) can download the latest state of the art open source model, download the research paper and learn how Meta approaches building their LLM. Meta commitment to open source allow us to have some insight of what it take to train a [stochastic ~~parrot]~~(https://en.wikipedia.org/wiki/Stochastic_parrot) [soggoth](https://www.lesswrong.com/posts/yjzW7gxk2h7bBs2qr/the-meaning-of-shoggoth-ai-memes) in the post ChatGPT era.
+
+So let's do just that and find out how many cars it takes to train a single AI model... in 2024.
 
 //TODO soggoth reading .jpg
 # Llama 3.1 and its paper
 
 
-*The 23rd July*, Meta released its new family of models in the Llama family. This new version, LLama 3.1 declines in three versions of different sizes and capabilities: **8B, 70B and 405B**. ("B" roughly represents a billion neurons)
+*The 23rd July*, Meta released its new family of models in the Llama family. This new version, LLama 3.1 declines in three versions of different sizes and capabilities: **8B, 70B and 405B**. ("B" roughly represents a billion neurons: the bigger, the better)
 
-This new model arrived by storm in the LLM community, and for good reasons: it's the best *open source* model to date, rivalizing with the lastest version of ChatGPT at the time of release.
+This new family of models arrived by storm in the LLM community, and for good reasons: it's the best *open source* model to date, rivalizing with the latest version of ChatGPT at the time of release.
 
-What's super cool is the 90 page paper released along side the model that goes into great technical details on the training, alignement and testing process. It's detailled enough so that we can start to derive some number from there.
+But contrary to ChatGPT, the release came with a [92 page scientific paper](https://arxiv.org/abs/2407.21783) that goes into great technical details on the training, alignement and testing process. It's detailled enough so that we can start to derive some number from there.
 
 Let's take a closer look and try to figure out how many cars it takes to train Llama 3.1.
 
 # What we learn from the paper
 
 
-The first two families of Llama models were trained on Meta's supercluster anounced in [January 2022](https://ai.meta.com/blog/ai-rsc/), at the time it was comprised of **6,080 A100 GPU.** But this supercluster was not enough for the new Llama models that was trained on a [brand new 48k H100 GPU cluster](https://engineering.fb.com/2024/03/12/data-center-engineering/building-metas-genai-infrastructure/)  
+The first two families of Llama models were trained on Meta's supercluster anounced in [January 2022](https://ai.meta.com/blog/ai-rsc/), at the time it was comprised of **6,080 A100 GPU.** But this supercluster was not enough for the new Llama models that were trained on a [brand new 48k H100 GPU cluster](https://engineering.fb.com/2024/03/12/data-center-engineering/building-metas-genai-infrastructure/)  
 
-By the end of 2024, Meta aims to scale this supercomputer with the processing power of 600k H100 GPUs. (*Can you guess why there is a shortage of NVIDIA GPUs these days?*) If you were to buy all of theses GPU yourself the total cost would be around eighteen billion dollars.   *EIGHTEEN - BILLION - DOLLARDS*. **That's around the gross domestic product of China in 2022**
+By the end of 2024, Meta aims to scale this supercomputer with the processing power of 600k H100 GPUs. (*Guess why there is a shortage of NVIDIA GPUs these days?*) If you were to buy all of theses GPU yourself the total cost would be around eighteen billion dollars.   *EIGHTEEN - BILLION - DOLLARDS*. **That's around the gross domestic product of China in 2022**.
 
-That sounds like more than five cars, maybe we'll need a bigger garage...
+That sounds like it uses more than five cars, maybe we'll need a bigger garage...
 
 ## Let's crunch the numbers
 
@@ -60,78 +60,50 @@ Of course all of the cluster is not used entirely at once. No more than 16k GPUs
 The training lasted around a hundred days, which for 16k GPU is coherent with the **39.3M GPU** hours in the paper. If we do a simple multiplication we can guess the number of Watt per hour that was poured into training Llama3.1
 
 $$
-39.3 \times 10^6 \, \text{hours} \times 700 \, \text{W} = 27,510 \, \text{MWh}
+39.3 \, \text{M GPU hours} \times 700 \, \text{W} = 27,510 \, \text{MWh}
 $$
-**27,510 MWh!** If we take the [average US household energy consumption](https://www.solarreviews.com/blog/how-many-kwh-does-a-house-use) to have an idea of scale, training theses models uses enough electricity  to cover the needs of **a thousand households for two and a half years**, six years if you take french households.
+**27,510 MWh!** If we take the [average US household energy consumption](https://www.solarreviews.com/blog/how-many-kwh-does-a-house-use) to have an idea of scale, training theses models uses enough electricity to cover the needs of **ten thousand households for the 3 months it took to train duration of training**, thirty thousand if thoses were french households.
 
 Meta does not disclose the location of its training datacenter, let's compare what this would cost in different countries using the [ElectricityMap website](https://app.electricitymaps.com/map)
 
 | Country       | gCO₂/kWh | Llama3.1 training in tons CO₂ |
 | ------------- | -------- | ----------------------------- |
-| Sweden        | 13       | 357.5                         |
-| France        | 25       | 687.5                         |
+| Sweden        | 13       | 357                           |
+| France        | 25       | 687                           |
 | Germany       | 250      | 6, 875                        |
-| United States | 400-700  | 15, 130                       |
-Realistaically, this datacenter is probably in the United States, so the 15 tons of CO₂ is the closest answer to reality. After the Llama3 model release, Dr. Sasha Luccioni — who you should follow — posted a [Linkedin post](https://www.linkedin.com/posts/sashaluccioniphd_congrats-to-meta-on-tracking-and-releasing-activity-7221603881791688705-1Fcj) that included a table for training emissions doing what I just did and found a total of 11.3 tons of CO₂eq emissions, so my calculations isn't far off! 
+| United States | 400-700  | 11, 000 - 19, 250             |
+Realistically, this datacenter is probably in the United States, and if Meta made the effort to chose a state were the electricity is low carbon, 11k tons of CO₂ should be pretty close to reality.  
+
+Dr. Sasha Luccioni — who you should follow — posted a [Linkedin post](https://www.linkedin.com/posts/sashaluccioniphd_congrats-to-meta-on-tracking-and-releasing-activity-7221603881791688705-1Fcj) a few days after the model release that included a table for training CO₂ emissions doing what I just did and found a total of 11,390 tons of CO₂eq emissions, so my calculations isn't far off! 
 
 Going back to the figure for US cars in the beggining of this article, we can finally calculte how many cars it takes to train an LLM nowadays, using Sasha's estimation because I trust her more than me:
 
-$$\frac{\text{CO}_2 \text{ cost of Llama3}}{\text{US car lifetime emissions}} = \frac{11,300 \, \text{tons of CO}_2}{126,000 \, \text{lbs of CO}_2 }= 179.37
+$$\frac{\text{CO}_2 \text{ cost of Llama3}}{\text{US car lifetime emissions}} = \frac{11,390 \, \text{tons of CO}_2}{126,000 \, \text{lbs of CO}_2 }= 180,8
 $$
 Finally! I can update the MIT Technology review article:
+> Training a single AI model can emit as much carbon as a ~~five~~ **one hundred eighty one** cars in their lifetimes
 
-> Training a single AI model can emit as much carbon as a ~~five~~ hundred seventy nine cars in their lifetimes
+So since writing this article in 2019, training a state of the art Large Language Model is **36 times** more damaging to the planet.
 
-So since writing this article in 2019, training a state of the art Large Language Model is **36 times** more damaging to our shared planet.
-
-![[Pasted image 20240925144455.png]]
-## Variables unaccounted for
+//TODO meme value for our shareholder
+## Hidden costs and roadblocks
 This figure is without counting the embodied CO2, i.e the cost of manufacturing the data center where this training has taken place. Nvidia does not currently disclose the carbon footprint of its GPUs but from an [article by Sasha Luccioni — that you should follow — et al.](https://arxiv.org/pdf/2211.02001) we estimate this cost to about **150 kg of CO2eq / GPU**
 
-For our 16k H100 this accounts for 2,400 tons more, assuming the carbon cost stayed about the same (which it hasn't). Theses GPU will be used for other trainings so it's not obvious how to account for them in our calculations.
-### On when training is resuming after synchronisation of the GPUs:
+For our 16k H100 this accounts for **2,400 tons more**, assuming the carbon cost for building a GPU stayed about the same since this article was written (which it hasn't). Theses GPU will be used for training other models so it's not obvious how to account for them in our calculations.
 
-"When this happens, it can result in instant fluctuations of power consumption across the data center on the order of tens of megawatts, stretching the limits of the power grid."
+This isn't even accounting for the inference cost, i.e the cost of running the model, that is way higher than the cost of training, and very hard to quantify.
 
-"This is an ongoing challenge for us as we scale training for future, even larger Llama models."
+The mere amount of electricity is not the only problem they face when building large language models, let's look at this excerpt from the paper:
+
+> During training, tens of thousands of GPUs may increase or decrease power consumption at the same time \[...\]. When this happens, it can result in instant fluctuations of power consumption across the data center **on the order of tens of megawatts**, **stretching the limits of the power grid**. This is an ongoing challenge for us as we scale training for future, even larger Llama models.
+
+So one roadblock facing Meta for their next training is the limits of the power grid capacity. In the future they'll need to have special deals with power providers to have special treatments when training theses absurdly large models. Another solution would be to plug a power station to the datacenter for its own usage. Or, you know, just crash the grid.
 
 //TODO 3 panel strip lights on, lights off, lights on "I feel like Zuck is cooking something up"
-
-# Inference costs
-
-We did not even start accounting for inference costs
-
 # So, what do we do now?
 
-Open Sourcing models to avoid retraining ?
-Limiting inference time by not going straight to an LLM
-Use smaller models when possible  
+Generative AI doesn't look like it's about to slow down, as consumers it feels like the trend that used to market every object as "connected" is now shifting to "smart". LLM are starting to be everywhere and a major part of our daily lifes. You cannot change the energy it took to train theses LLM but you can limit the inference cost by avoiding going straight to ChatGPT when a simple google search would have done the job.
 
-Other article
+Companies are in a arms race to build the biggest and most powerful model, but we still have a lot to learn from  what we can do with our current ones. OpenAI recently released o1, which is not bigger but achieves better results by "taking the time to think" before answering. I believe that approaches are more promising in the near future to achieve better results using the same models. 
 
-# Future perspectives
-
-
-Are data center getting better ?
-
-AI Gen getting more and more popular
-
-Big tech is focused on building a bigger and better model, and there is no going back
-
-Do we even need it ? => We have yet to explore what we can do with our current models
-
-Every company trains it own model, and most are murican
-
-10 google research = 1 chatgpt call
-
-  
-
-# Sources
-
-https://nathanbaileyw.medium.com/the-carbon-footprint-of-llms-a-disaster-in-waiting-6fc666235cd0
-
-https://www.usinenouvelle.com/article/le-succes-de-l-intelligence-artificielle-fait-bondir-l-empreinte-carbone-des-acteurs-du-secteur.N2213817
-
-https://promptengineering.org/llm-open-source-vs-open-weights-vs-restricted-weights/
-
-https://medium.com/gptalk/is-llama-3-1-really-open-source-73ac220f9aa2
+But for the time being, I'm not sure we will ever go back to smaller models, and I doubt this race is in line with our current global life threatening climate crisis.
