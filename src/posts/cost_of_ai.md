@@ -58,7 +58,7 @@ The training lasted around a hundred days, which for 16k GPU is coherent with th
 
 ![xlarge](/blog/assets/img/equation.png)
 
-**27,510 MWh!** If we take the [average US household energy consumption](https://www.solarreviews.com/blog/how-many-kwh-does-a-house-use) to have an idea of scale, training theses models uses enough electricity to cover the needs of **ten thousand households for the 3 months it took to train duration of training**, thirty thousand if thoses were french households.
+**27,510 MWh!** If we take the [average US household energy consumption](https://www.solarreviews.com/blog/how-many-kwh-does-a-house-use) to have an idea of scale, training theses models uses enough electricity to cover the needs of **ten thousand households for the 3 months it took to train the model**, thirty thousand if thoses were french households.
 
 Meta does not disclose the location of its training datacenter, let's compare what this would cost in different countries using the [ElectricityMap website](https://app.electricitymaps.com/map)
 
