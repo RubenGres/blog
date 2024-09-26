@@ -71,7 +71,7 @@ Meta does not disclose the location of its training datacenter, let's compare wh
 
 Realistically, this datacenter is probably in the United States, and if Meta made the effort to chose a state were the electricity is low carbon, **11k tons of CO₂ should be pretty close to reality**.  
 
-Dr. Sasha Luccioni — who you should follow — posted a [Linkedin post](https://www.linkedin.com/posts/sashaluccioniphd_congrats-to-meta-on-tracking-and-releasing-activity-7221603881791688705-1Fcj) a few days after the model release that included a table for training CO₂ emissions doing what I just did and found a total of **11,390 tons of CO₂eq emissions**, so my calculations isn't far off! 
+Dr. Sasha Luccioni — who you should follow — posted a [Linkedin post](https://www.linkedin.com/posts/sashaluccioniphd_congrats-to-meta-on-tracking-and-releasing-activity-7221603881791688705-1Fcj) a few days after the model release that included a table for training CO₂ emissions. She arrived at a total of **11,390 tons of CO₂eq emissions**, so my calculations isn't far off! 
 
 Going back to the figure for US cars in the beggining of this article, we can finally calculte how many cars it takes to train an LLM nowadays, using Sasha's estimation because I trust her more than me:
 
@@ -86,11 +86,11 @@ So since 2019, training a state of the art Large Language Model is now **36 time
 ![xxlarge](/blog/assets/img/trafficjam.png)
 
 ## Hidden costs and roadblocks
-This figure is without counting the embodied CO2, i.e the cost of manufacturing the data center where this training has taken place. Nvidia does not currently disclose the carbon footprint of its GPUs but from an [article by Sasha Luccioni — that you should follow — et al.](https://arxiv.org/pdf/2211.02001) we estimate this cost to about **150 kg of CO2eq / GPU**
+This figure is without counting the embodied CO2, i.e the cost of manufacturing the data center where this training has taken place. Nvidia does not currently disclose the carbon footprint of its GPUs but from an [article by Sasha Luccioni — that you should follow — et al.](https://arxiv.org/pdf/2211.02001) we estimate this cost to be about **150 kg of CO2eq / GPU**
 
 For our 16k H100 this accounts for **2,400 tons more**, assuming the carbon cost for building a GPU stayed about the same since this article was written (which it hasn't). Theses GPU will be used for training other models so it's not obvious how to account for them in our calculations.
 
-This isn't even accounting for the inference cost, i.e the cost of running the model, that is way higher than the cost of training, and very hard to quantify.
+This isn't even accounting for the inference cost — the cost of running the model — that is way higher than the cost of training, and very hard to quantify.
 
 The mere amount of electricity is not the only problem they face when building large language models, let's look at this excerpt from the paper:
 
