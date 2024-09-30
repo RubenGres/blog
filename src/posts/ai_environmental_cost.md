@@ -1,5 +1,5 @@
 ---
-title: "The Carbon Cost Of Training A Large Language Model"
+title: "The Environmental Cost Of Training A Large Language Model"
 date: 2024-09-26
 thumb: "ai_carbon_cost.jpg"
 tags:
@@ -87,7 +87,7 @@ So since 2019, training a state of the art Large Language Model is now **36 time
 ![xxlarge](/blog/assets/img/trafficjam.png)
 
 ## Hidden costs and roadblocks
-This figure is without counting the embodied CO2, i.e the cost of manufacturing the data center where this training has taken place. Nvidia does not currently disclose the carbon footprint of its GPUs but from an [article by Sasha Luccioni — that you should follow — et al.](https://arxiv.org/pdf/2211.02001) we estimate this cost to be about **150 kg of CO2eq / GPU**.
+This figure is without counting the embodied CO2, i.e the cost of manufacturing the data center where this training has taken place. Nvidia does not currently disclose the carbon footprint of its GPUs but from an [article by Sasha Luccioni et al.](https://arxiv.org/pdf/2211.02001) we estimate this cost to be about **150 kg of CO2eq / GPU**.
 
 For our 16k H100 this accounts for **2,400 tons more**, assuming the carbon cost for building a GPU stayed about the same since this article was written (which it hasn't). Theses GPU will be used for training other models so it's not obvious how to account for them in our calculations.
 
