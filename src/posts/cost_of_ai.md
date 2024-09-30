@@ -1,5 +1,5 @@
 ---
-title: "The carbon cost of training a Large Language Model"
+title: "The Carbon Cost Of Training A Large Language Model"
 date: 2024-09-26
 thumb: "ai_carbon_cost.jpg"
 tags:
