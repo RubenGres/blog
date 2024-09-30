@@ -47,7 +47,7 @@ But contrary to ChatGPT, the release came with a [92 page scientific paper](http
 
 The first two families of Llama models were trained on Meta's supercluster anounced in [January 2022](https://ai.meta.com/blog/ai-rsc/), at the time it was comprised of **6,080 A100 GPU.** But this supercluster was not enough for the new Llama models that were trained on a [brand new 48k H100 GPU cluster](https://engineering.fb.com/2024/03/12/data-center-engineering/building-metas-genai-infrastructure/)  
 
-By the end of 2024, Meta aims to scale this supercomputer with the processing power of 600k H100 GPUs. (*Guess why there is a shortage of NVIDIA GPUs these days?*) If you were to buy all of theses GPU yourself the total cost would be around eighteen billion dollars.   *EIGHTEEN - BILLION - DOLLARDS*. **That's around the gross domestic product of China in 2022**.
+By the end of 2024, Meta aims to scale this supercomputer with the processing power of 600k H100 GPUs. (*Guess why there is a shortage of NVIDIA GPUs these days?*) If you were to buy all of theses GPU yourself the total cost would be around eighteen billion dollars. *EIGHTEEN - BILLION - DOLLARDS*. This represents the tenth of Meta revenues, and we're only counting the cost of the GPUs.
 
 That sounds like it uses more than five cars, maybe we'll need a bigger garage...
 
