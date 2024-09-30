@@ -1,9 +1,10 @@
 ---
 title: "The cost of training a Large Language Model"
 date: 2024-09-26
-thumb: "cost_of_ai.jpg"
+thumb: "ai_carbon_cost.jpg"
 tags:
     - ecology
+    - AI
     - LLM
 ---
 
@@ -86,7 +87,7 @@ So since 2019, training a state of the art Large Language Model is now **36 time
 ![xxlarge](/blog/assets/img/trafficjam.png)
 
 ## Hidden costs and roadblocks
-This figure is without counting the embodied CO2, i.e the cost of manufacturing the data center where this training has taken place. Nvidia does not currently disclose the carbon footprint of its GPUs but from an [article by Sasha Luccioni — that you should follow — et al.](https://arxiv.org/pdf/2211.02001) we estimate this cost to be about **150 kg of CO2eq / GPU**
+This figure is without counting the embodied CO2, i.e the cost of manufacturing the data center where this training has taken place. Nvidia does not currently disclose the carbon footprint of its GPUs but from an [article by Sasha Luccioni — that you should follow — et al.](https://arxiv.org/pdf/2211.02001) we estimate this cost to be about **150 kg of CO2eq / GPU**.
 
 For our 16k H100 this accounts for **2,400 tons more**, assuming the carbon cost for building a GPU stayed about the same since this article was written (which it hasn't). Theses GPU will be used for training other models so it's not obvious how to account for them in our calculations.
 
@@ -96,16 +97,25 @@ The mere amount of electricity is not the only problem they face when building l
 
 > During training, tens of thousands of GPUs may increase or decrease power consumption at the same time \[...\]. When this happens, it can result in instant fluctuations of power consumption across the data center **on the order of tens of megawatts**, **stretching the limits of the power grid**. This is an ongoing challenge for us as we scale training for future, even larger Llama models.
 
-So one roadblock facing Meta for their next training is the limits of the power grid capacity. In the future they'll need to have special deals with power providers to have special treatments when training theses absurdly large models. Another solution would be to plug a power station to the datacenter for its own usage. Or, you know, just crash the grid.
+A major roadblock for the next generation AI is power consumption.  
+
+Meta is not the only one facing this issue as [OpenAI wants to build 5-gigawatt datacenters](https://fortune.com/2024/09/27/openai-5gw-data-centers-altman-power-requirements-nuclear/). That's the output of five nuclear plants, for a single datacenter.
+
+A solution would be to plug a dedicated power plant directly to the datacenter. We're starting to see some signs of this:  Microsoft is [refurbishing a nuclear power plant](https://www.technologyreview.com/2024/09/26/1104516/three-mile-island-microsoft/) for their datacenters and [Amazon is heavily investing in nuclear energy](https://heatmap.news/technology/amazon-nuclear-talen-energy).
+
+Or, you know, just crash the grid.
 
 ![xxxlarge](/blog/assets/img/llama_strip.png)
 
 # So, what do we do now?
 
-Generative AI doesn't look like it's about to slow down, as LLMs start to appear in every product we use everyday. You can't avoid training theses models but you can avoid going straight to ChatGPT when a simple google search would have done the job. And save a little bit of energy every time.
+GenAI isn't slowing down any time soon as LLMs start to appear in every product we use everyday.  
 
-Companies are in a arms race to build the biggest and most powerful model, but we still have a lot to learn from  what we can do with our current ones. OpenAI recently released o1, which is not bigger but achieves better results by "taking the time to think" before answering. I believe approaches like this are promising in the near future to achieve better results with the same model. 
+Companies are in a arms race to build the biggest and most powerful model, but we still have a lot to learn from  what we can do with our current ones. OpenAI recently released o1, which is not bigger but achieves better results by "taking the time to think" before answering. I believe approaches like this are promising in the near future to achieve better results with same sized model.
 
-But for the time being, I'm not sure we will ever go back to smaller models, and I doubt this race is in line with our current global life threatening climate crisis
+
+In the meantime you can try being concious about your usage. For example, avoid going straight to ChatGPT when a simple google search would have done the job. And save a little bit of energy every time.
+
+Or go all in and hope our AI overlords can solve our current life threatening global climate crisis.
 
 ![xxlarge](/blog/assets/img/firecamp_meme.png)
