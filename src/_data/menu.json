@@ -4,10 +4,6 @@
         "url": "https://rubengr.es/blog"
     },
     {
-        "label": "Portfolio",
-        "url": "https://rubengr.es"
-    },
-    {
         "label": "Publications",
         "url": "https://rubengr.es/publications"
     },
@@ -20,7 +16,7 @@
         "url": "https://rubengr.es/resume"
     },
     {
-        "label": "Contact",
-        "url": "https://rubengr.es/contact"
+        "label": "About",
+        "url": "https://rubengr.es/about"
     }
 ]
