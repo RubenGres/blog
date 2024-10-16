@@ -28,11 +28,11 @@ The metaverse didn't catch on...
 
 When Meta finally admitted it, they went all in on AI and started making models to compete against OpenAI. Their strategy is a bit different though as they prefer focusing on usecases and distribute their model in open source, even allowing commmercial use.
 
-Anyone (or anyone with a good enough computer) can download the latest state of the art open source model, download the research paper and learn how Meta approaches building their LLM. Meta commitment to open source allow us to have some insight of what it take to train a [stochastic ~~parrot~~](https://en.wikipedia.org/wiki/Stochastic_parrot) [soggoth](https://www.lesswrong.com/posts/yjzW7gxk2h7bBs2qr/the-meaning-of-shoggoth-ai-memes) in the post ChatGPT era.
+Anyone (or anyone with a good enough computer) can download the latest state of the art open source model, download the research paper and learn how Meta approaches building their LLM. Meta commitment to open source allow us to have some insight of what it take to train a [stochastic ~~parrot~~](https://en.wikipedia.org/wiki/Stochastic_parrot) [shoggoth](https://www.lesswrong.com/posts/yjzW7gxk2h7bBs2qr/the-meaning-of-shoggoth-ai-memes) in the post ChatGPT era.
 
 So let's do just that and find out how many cars it takes to train a single AI model... in 2024.
 
-![xlarge](/blog/assets/img/soggoth_reading.png)
+![xlarge](/blog/assets/img/soggoth_in_a_car.png)
 
 # Llama 3.1 and its paper
 
