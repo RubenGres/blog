@@ -75,6 +75,6 @@ Good luck finding your box then!
   
     After a few games, some boxes may be empty. If an empty box is found, MENACE gives up. It's possible that the first box empties quickly, so we'll have to reset the first boxes with more beads to give it more time to learn.
 
-    Before training, 4 pearls of each color are placed in the first box. This is followed by three beads in the third-shot box, two in the fifth-shot box and a single bead in the last-shot box. This makes it possible to reward or punish the last moves more strongly, as they have a greater effect on the outcome of the game.
+    Before training, 4 beads of each color are placed in the first box. This is followed by three beads in the third-shot box, two in the fifth-shot box and a single bead in the last-shot box. This makes it possible to reward or punish the last moves more strongly, as they have a greater effect on the outcome of the game.
 </details>
 
