@@ -13,7 +13,7 @@ So I recreated **MENACE** (*Matchbox Educable Noughts and Crosses Engine*), a **
 
 ![xxlarge](/blog/assets/img/menace_rgres.png)
 
-I've first heard about MENACE on [this Matt Parker video](https://www.youtube.com/watch?v=R9c-_neaxeU) in 2018, this version was made by Matthew Scroggs, self-proclaimed "World's #1 matchbox fan". More about it on [this blogpost](https://www.mscroggs.co.uk/blog/19). Though Matthew's version introduced me to the MENACE, he did not came up with it himself.
+I've first heard about MENACE on [this Matt Parker video](https://www.youtube.com/watch?v=R9c-_neaxeU) in 2018, this version was made by Matthew Scroggs, self-proclaimed "World's #1 matchbox fan". More about it on [this blogpost](https://www.mscroggs.co.uk/blog/19). Though Matthew's version introduced me to MENACE, he did not came up with it himself.
 
 The first version of MENACE was designed in 1961 by [Donald Michie](https://fr.wikipedia.org/wiki/Donald_Michie), a British computer scientist who's most famous for having helped break the German encryption during WWII. This idea came from a bet with a colleague who told him it was impossible to create a machine that could learn to play games. Theses days, it is common to get beaten by AI playing Chess, Go or even Mario Kart. But when Michie took the bet it was [13 years before computer even used mice](https://en.wikipedia.org/wiki/Xerox_Alto) and AI was still in its infancy.  
 
