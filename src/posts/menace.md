@@ -66,7 +66,7 @@ Tic-tac-toe is a perfect game for MENACE because there is a relatively small amo
 
 For complex systems, modern reinforcement learning algorithms do not account for all possible configurations but use neural networks to approximate the state space.
 
-But if you *really* wanted to create the Chess version of MENACE though, you'll need ten to the fortieth matchboxes and a whole lot of beads. Let's say you used the [universal paperclip](https://www.decisionproblem.com/paperclips/) approach and used all of the energy you had into making matchboxes and beads and managed to build every single one you needed. There would be so many matchboxes that they'll start to collapse from their own gravital force and create a sphere spanning across the whole solar system.
+But if you *really* wanted to create the Chess version of MENACE though, you'll need ten to the fortieth matchboxes and a whole lot of beads. Let's say you used the [universal paperclip](https://www.decisionproblem.com/paperclips/) approach and mined a few planet for resources to make all matchboxes and beads you needed. This many  matchboxes would start to collapse from their own gravital pull and create a sphere spanning across the whole solar system.
 
 Good luck finding your box then!
 
