@@ -70,6 +70,8 @@ But if you *really* wanted to create the Chess version of MENACE though, you'll 
 
 Good luck finding your box then!
 
+![xlarge](/blog/assets/img/menace_drawing.jpg)
+
 <details>
   <summary>PS: A few details I left out for the more curious</summary>
   
