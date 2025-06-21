@@ -9,15 +9,13 @@ tags:
 
 For the past few weeks, the LLM community has been buzzing about [mergekit](https://github.com/arcee-ai/mergekit), a tool that enables the merging of large language models. However, [the academic paper that introduced this method](https://arxiv.org/abs/2306.01708) overlooked a crucial detail: there's another community that didn't wait for academic validation to start merging machine learning models. These pioneers were the Stable Diffusion hobbyists, particularly those congregating on [CivitAI](https://civitai.com/).
 
-Most researchers have overlooked these communities, despite their significant role in advancing research and attracting newcomers to machine learning. The academic world could benefit tremendously from observing their innovations. This article examines these ethically complex but technically innovative communities and their contributions to AI development.
-
 ## CivitAI: The Underground Model Laboratory
 
 CivitAI serves as a model-sharing platform where users distribute their fine-tuned Stable Diffusion models. The site hosts models trained on specific artistic styles, photorealistic techniques, and various aesthetic preferences. What sets CivitAI apart is its permissive stance on Not Safe For Work (NSFW) content—a policy that has led to some unexpected technical breakthroughs.
 
 Within this environment, users began creating sophisticated merged models, combining multiple existing models to achieve superior results. This grassroots experimentation proved remarkably successful. Today, the highest-performing Stable Diffusion models are typically merges of various models, including *NSFW-trained* ones.
 
-This success created an intriguing technical challenge: the most capable anime models exhibit strong biases toward adult content. [Reddit user PRNGAppreciation looked into the issue](https://www.reddit.com/r/StableDiffusion/comments/12huyk4/evaluation_of_the_latent_horniness_of_the_most/), examining the "latent horniness" of popular anime-style models:
+This comes with an inherent challenge: the most capable anime models exhibit strong biases toward adult content. [Reddit user PRNGAppreciation looked into the issue](https://www.reddit.com/r/StableDiffusion/comments/12huyk4/evaluation_of_the_latent_horniness_of_the_most/), examining the "latent horniness" of popular anime-style models:
 
 ![](/blog/assets/img/evaluation-of-the-latent-horniness-of-the-most-popular.webp)
 
@@ -55,32 +53,20 @@ The technology's trajectory from Reddit proof-of-concept to Hollywood production
 
 In 2015, the most effective image upscaling algorithm didn't emerge from Google, Microsoft, or other tech giants. Instead, Waifu2x was developed by a relatively unknown Japanese Kaggle competitor, motivated by the desire to enhance anime artwork quality.
 
-The name itself—"waifu" being internet slang for idealized anime characters—clearly indicates the developer's motivation. Despite its unconventional origins, Waifu2x represented a significant advance in super-resolution techniques and influenced subsequent research in the field.
+The name itself, "waifu" is internet slang for anime characters, giing us come clues on the developer motivation. Despite its unconventional origins, Waifu2x represented a significant advance in super-resolution techniques and influenced subsequent research in the field.
 
 ### r/AnimeResearch: Specialized ML Applications
 
-The [r/AnimeResearch]((https://www.reddit.com/r/AnimeResearch/) subreddit, with approximately 4,000 members, focuses on machine learning applications specific to anime content. While relatively small, this community has produced notable technical contributions.
+The [r/AnimeResearch]((https://www.reddit.com/r/AnimeResearch/) subreddit, with approximately 4,000 members, focuses on machine learning for anime. While relatively small, this community has produced notable technical contributions.
 
-Their most significant project, DeepCreamPy, demonstrates sophisticated inpainting capabilities for anime imagery. The model can reconstruct obscured portions of images with remarkable accuracy, representing meaningful advances in generative inpainting techniques.
-
+Their most significant project, [DeepCreamPy](https://github.com/Deepshift/DeepCreamPy) and [HentAI](https://github.com/natethegreate/hent-AI), uses inpainting for anime... uncensoring.
 The community has also developed specialized tools like ["This Anime Does Not Exist"](https://thisanimedoesnotexist.ai/), a parody of [thispersondoesnotexist](https://thispersondoesnotexist.com/) focused on anime girls. After years of focus on GANs, they recently moved to diffusion models and soon enough many lewds models appeared in the wild.
 
 ## Implications for Academic Research
-
-These communities demonstrate several important patterns that academic researchers might consider:
-
-**Rapid Iteration**: Without traditional peer review constraints, these groups can experiment and iterate quickly, often identifying promising directions before formal research catches up.
-
-**Domain Expertise**: Deep familiarity with specific content types (anime, art styles, etc.) enables these communities to identify subtle quality improvements that generalist researchers might miss.
-
-**User-Centered Development**: Direct engagement with end users leads to practical innovations that address real usage patterns rather than theoretical benchmarks.
-
-**Resource Efficiency**: Operating with limited resources, these communities often develop efficient techniques that scale well to broader applications.
+These communities demonstrate important patterns for academic researchers to consider. Their ability to **iterate rapidly** without peer review constraints allows them to identify promising directions before formal research catches up. **Deep domain expertise** in specific content types enables them to spot subtle quality improvements that generalist researchers often miss. Direct user engagement drives **practical innovations** that address real usage patterns rather than theoretical benchmarks. Operating with limited resources, they develop **efficient techniques** that scale well to broader applications, showing how constraints can foster unexpected innovation.
 
 ## Final thoughts: The innovative power of the masses
 
-While these communities may have unconventional motivations, their technical contributions are huge. They demonstrate that innovation doesn't require traditional institutional frameworks—sometimes passionate, specialized communities can advance the state of the art as effectively as well-funded research labs.
+While these communities may have unconventional motivations, their technical contributions are huge. The academic world would benefit from engaging more seriously with these alternative research groups.
 
-The academic world would benefit from engaging more seriously with these alternative research communities. Their combination of domain expertise, rapid experimentation, and practical focus often yields insights that complement traditional research approaches.
-
-Perhaps most importantly, these communities remind us that the most powerful driver of innovation isn't always noble but can come from skilled individuals wanting their waifus to come to life.
+Once again, they prove to us that the most powerful driver of innovation isn't always noble but can come from skilled individuals wanting to bring their waifus to life.
