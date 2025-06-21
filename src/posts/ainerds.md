@@ -7,15 +7,17 @@ tags:
     - research
 ---
 
-For the past few months the LLM community are excited with the advent of [mergekit](https://github.com/arcee-ai/mergekit) that allow the merging of LLM. [The paper that introduced this method for LLM](https://arxiv.org/abs/2306.01708) failed to mention that there is another – albeit non academic – community that did not wait for this paper to merge machine learning models: StableDiffusion finetuning hobbyists, specifically on the website [CivitAI](https://civitai.com/).
+For the past few weeks, the LLM community has been buzzing about [mergekit](https://github.com/arcee-ai/mergekit), a tool that enables the merging of large language models. However, [the academic paper that introduced this method](https://arxiv.org/abs/2306.01708) overlooked a crucial detail: there's another community that didn't wait for academic validation to start merging machine learning models. These pioneers were the Stable Diffusion hobbyists, particularly those congregating on [CivitAI](https://civitai.com/).
 
-Most researchers never took interest in theses communities even though they play a significant role in pushing the research and getting people in machine learning. I'm sure the academic world could greatly benefit from keeping an eye on what they are up to. This article is a tribute to theses ethically questionnable communities.
+Most researchers have overlooked these communities, despite their significant role in advancing research and attracting newcomers to machine learning. The academic world could benefit tremendously from observing their innovations. This article examines these ethically complex but technically innovative communities and their contributions to AI development.
 
-# CivitAI
+## CivitAI: The Underground Model Laboratory
 
-CivitAI is a model sharing website that allow users to share their finetuned model of StableDiffusion. This way you can find models trained on specific artistic styles or optimized to have realistic results. The website **ALLOWS** for Not Safe For Work (NSFW) content, so if you decide to take a look for yourself be prepared to encounter many naked, big brested anime girls. Amongst this turmoil, some users decided to create the ultimate hentai model by merging multiple existing models. Sounds familiar?
+CivitAI serves as a model-sharing platform where users distribute their fine-tuned Stable Diffusion models. The site hosts models trained on specific artistic styles, photorealistic techniques, and various aesthetic preferences. What sets CivitAI apart is its permissive stance on Not Safe For Work (NSFW) content—a policy that has led to some unexpected technical breakthroughs.
 
-Their task turned out to be so successful that at the time of writing this article, the stable diffusion model that yields the best results for anime style is a merge of different models, including NSFW. Now we face a very strange problem where all the models that we ave are heavily biased towards nudity, which, you might consider a bug or a feature depending on what you are working on. [Reddit user PRNGAppreciation looked into this issue](https://www.reddit.com/r/StableDiffusion/comments/12huyk4/evaluation_of_the_latent_horniness_of_the_most/) and compared *latent hornyness* of popular anime style models on the website:
+Within this environment, users began creating sophisticated merged models, combining multiple existing models to achieve superior results. This grassroots experimentation proved remarkably successful. Today, the highest-performing Stable Diffusion models are typically merges of various models, including *NSFW-trained* ones.
+
+This success created an intriguing technical challenge: the most capable anime models exhibit strong biases toward adult content. [Reddit user PRNGAppreciation looked into the issue](https://www.reddit.com/r/StableDiffusion/comments/12huyk4/evaluation_of_the_latent_horniness_of_the_most/), examining the "latent horniness" of popular anime-style models:
 
 ![](/blog/assets/img/evaluation-of-the-latent-horniness-of-the-most-popular.webp)
 
@@ -24,54 +26,61 @@ There is a CLEAR bias towards female character, nudity and NSFW content in all t
 </b></center>
 <br>
 
-I used to use AnythingV5 quite a while ago and clearly noticed the biases. I since moved to Dreamshaper4 for my go-to model when [Bernat](https://cunicode.com) intruced me to it on [https://wtfood.eu/about/](wtfood.eu), and the difference is really noticeable.
+I used to use AnythingV5 quite a while ago and clearly noticed the biases. I since moved to Dreamshaper4 for my go-to model when [Bernat](https://cunicode.com) introduced me to it on [https://wtfood.eu/about/](wtfood.eu), and the difference is really noticeable.
 
-# PonyDiffusion
 
-One of the model that emerged from the CivitAI community is PonyDiffusion. The model what first created by member of the MyLittlePony (MLP) community and trained on MLP fan art. The model quickly became the most popular model on CivitAI.
+## PonyDiffusion: From Fandom to Technical Innovation
 
-PonyDiffusion is a interesting example for a few reasons, besides from its curious origin the author often writes blog explaining their work and approach. Notably they spent multiple weeks straight [scoring >30k images by hand](https://civitai.com/articles/4248/what-is-score9-and-how-to-use-it-in-pony-diffusion) to teach the model human preferences.
+One of CivitAI's most successful models emerged from an unexpected source: the My Little Pony fan community. PonyDiffusion, initially trained on MLP fan art, evolved into one of the platform's most popular and technically sophisticated models.
 
-The author of pony diffusion [ranted on CivitAI](https://civitai.com/articles/5671/towards-pony-diffusion-v7-i-mean-v69) on the response they got from the Stability team.
+What makes PonyDiffusion particularly noteworthy is its creator's commitment to rigorous methodology and transparent documentation. The developer spent weeks manually scoring over 30,000 images to implement human preferencesimilarly to RLHF (Reinforcement Learning from Human Feedback) for language models.
+
+The PonyDiffusion creator has been vocal about the challenges of working outside traditional research frameworks. In a notable blog post, they expressed frustration with dismissive attitudes from established companies:
 
 > "At the heart of the issue, they appear to dismiss Pony as merely a (perhaps low-effort) niche-focused fine-tune, and they seem uninterested in my technical efforts."
 
-With the recent release of StableDiffusion3, this tendency from Stability is even more clear, the model trainers will now be held responsible for every image generated by the model, which is a huge liability for CivitAI. While there is no new and more permissive licence, CivitAI is banning SD3 models from their website.
+This dynamic highlights a recurring theme: unconventional innovative communities often faces skepticism from established institutions, despite demonstrable technical merit.
 
-# Reddit user "DeepFake"
+## The DeepFake Origin Story: When Reddit Users Lead Research
 
-Nowadays the term deepfake is very common and understood by most. But the origin of the term and this method is usually less known. In 2015, videos of celebrities in very explicit scene started appearing on reddit, posted by an user called "DeepFakes" with no previous post history. People quickly realized that the videos were fake, and the reddit user gave details about the method they used. If you are curious you can find the original post on archive.org **(very NSFW, obsviously)**
+The term "deepfake" is now ubiquitous, but its origins trace back to a single Reddit user. In 2017, a user named "deepfakes" began posting manipulated videos of celebrities, accompanied by detailed technical explanations of their methodology. This represented one of the first accessible implementations of face-swapping technology for general users.
 
-The first papers reproducing this method came soon after and directly cited the reddit user as a source. From there a long list of papers improving little by little the method came one after the other and soon there was user friendly tools that allowed to create deepfakes really easily with no technical skills.
+The academic community responded quickly, with researchers citing the Reddit posts in subsequent papers. This led to rapid iteration and improvement of the technique, eventually resulting in user-friendly tools that democratized deepfake creation.
 
-We will not dive into ethical considerations for letting this kind of tool spread on the internet, but there is definitely a discussion to have around distributing thoses models and the stakes of open sourcing them.
+The technology's trajectory from Reddit proof-of-concept to Hollywood production tool illustrates how grassroots innovation can reshape entire industries. Major studios now use similar techniques for digital resurrection of deceased actors and de-aging effects. The broader implications—including the commodification of actors' likenesses—continue to unfold.
 
-This technique became very popular and soon enough Hollywood took interest into it. In the last Star Wars movies the studio used deepfakes to let the late Peter Cushing and Carrie Fisher be on screen despite not being in the *alive club* anymore. Now actors are starting to [sell their image](https://www.theinformation.com/articles/dont-put-your-head-in-the-sand-stars-are-quietly-inking-deals-to-license-their-ai-doubles) to train AI to create a virtual clone of themselves instead of actually starring in the movie. We're slowly moving toward a society where the actors themselves are being commodified and sold only for their image.
+## Technical Breakthroughs from Anime-Focused Research
 
-In the end, one user with technical skills and a questionable ethic started a whole new field of research.
+### Waifu2x: Pioneering Super-Resolution
 
+In 2015, the most effective image upscaling algorithm didn't emerge from Google, Microsoft, or other tech giants. Instead, Waifu2x was developed by a relatively unknown Japanese Kaggle competitor, motivated by the desire to enhance anime artwork quality.
 
-# Anime research
+The name itself—"waifu" being internet slang for idealized anime characters—clearly indicates the developer's motivation. Despite its unconventional origins, Waifu2x represented a significant advance in super-resolution techniques and influenced subsequent research in the field.
 
-## Waifu2x
+### r/AnimeResearch: Specialized ML Applications
 
-In 2015 the best upscaling algorithm was not created by Google, Microsoft or any other GAFAM. It was called Waifu2x and behind it was no team of engineers but a relatively unknown japanese kaggle master.
+The [r/AnimeResearch]((https://www.reddit.com/r/AnimeResearch/) subreddit, with approximately 4,000 members, focuses on machine learning applications specific to anime content. While relatively small, this community has produced notable technical contributions.
 
-If you're not familiar with internet lingo, a waifu is a girl from a manga or anime that is idealized by fans who are attracted to her. People can develop intimate relationships with their waifu that may be unsettling to some.
+Their most significant project, DeepCreamPy, demonstrates sophisticated inpainting capabilities for anime imagery. The model can reconstruct obscured portions of images with remarkable accuracy, representing meaningful advances in generative inpainting techniques.
 
-I'll let you draw your own conclusions on what motivated the creation of this model.
+The community has also developed specialized tools like ["This Anime Does Not Exist"](https://thisanimedoesnotexist.ai/), a parody of [thispersondoesnotexist](https://thispersondoesnotexist.com/) focused on anime girls. After years of focus on GANs, they recently moved to diffusion models and soon enough many lewds models appeared in the wild.
 
-## r/AnimeResearch
+## Implications for Academic Research
 
-Reddit is also a widely used hub for organizing alternatives research communities online.
-For example, [r/AnimeResearch](https://www.reddit.com/r/AnimeResearch/) is a subreddit that focuses on machine learning applied to anime. Currently four thousand people are following the page, so it remains a relatively small community.
+These communities demonstrate several important patterns that academic researchers might consider:
 
-One of their main goal is to create the ultimate decensoring model to unblur genitals in hentais. Their biggest achievement in that regard is the model [DeepCreamPy](https://github.com/Deepshift/DeepCreamPy), a GAN that can reconstruct *any* obstructed part in a anime image.
+**Rapid Iteration**: Without traditional peer review constraints, these groups can experiment and iterate quickly, often identifying promising directions before formal research catches up.
 
-Another notable website is [thisanimedoesnotexist](https://thisanimedoesnotexist.ai/), a parody of [thispersondoesnotexist](https://thispersondoesnotexist.com/) focused on anime girls. After years of focus on GANs, they recently moved to diffusion models and soon enough many lewds models appeared in the wild.
+**Domain Expertise**: Deep familiarity with specific content types (anime, art styles, etc.) enables these communities to identify subtle quality improvements that generalist researchers might miss.
 
-# Final thoughts
+**User-Centered Development**: Direct engagement with end users leads to practical innovations that address real usage patterns rather than theoretical benchmarks.
 
-While these communities may not always have the most noble intentions, their contributions to the field of machine learning and AI are undeniable. The academic world could greatly benefit from keeping an eye on what these groups are up to, as they also push the boundaries of research and innovation in unexpected ways.
+**Resource Efficiency**: Operating with limited resources, these communities often develop efficient techniques that scale well to broader applications.
 
-People don't realize the untaped potential of commited, chronically online — and above all horny — nerds
+## Final thoughts: The innovative power of the masses
+
+While these communities may have unconventional motivations, their technical contributions are huge. They demonstrate that innovation doesn't require traditional institutional frameworks—sometimes passionate, specialized communities can advance the state of the art as effectively as well-funded research labs.
+
+The academic world would benefit from engaging more seriously with these alternative research communities. Their combination of domain expertise, rapid experimentation, and practical focus often yields insights that complement traditional research approaches.
+
+Perhaps most importantly, these communities remind us that the most powerful driver of innovation isn't always noble but can come from skilled individuals wanting their waifus to come to life.
