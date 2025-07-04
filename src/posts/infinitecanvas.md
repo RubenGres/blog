@@ -12,12 +12,11 @@ In the summer of 2022, diffusion models were beginning to become more and more c
 Excited to try this new technology, some of us from [LatentMinds](https://latenminds.co) decided to work on a project to facilitate the use of this technology and make it available to a broader audience.
 
 This is how the [InfiniteCanvas](https://canvas.koll.ai) project started. A multi user, multi resolution shared canvas for image generation with infinite zoom and no borders.
+In the following weeks, [Philippe](https://www.linkedin.com/in/philippe-saad%C3%A9-26972b149/) and [Ruben](https://rubengres.com) spent long nights and questionable decisions to make this idea a reality.
 
 ![xxlarge](/blog/assets/img/1.ui.png)
 
 Today the project is no longer active, but we figured we'll redact a short write-up to document our learnings and attest to the innovative approaches we had to invent at a time where diffusion models were only in their infancy.
-
-In the following weeks, [Philippe](https://www.linkedin.com/in/philippe-saad%C3%A9-26972b149/) and [Ruben](https://rubengres.com) spent long nights and questionable decisions to make this idea a reality.
 
 ## Building on a Budget
 We had no funding to work on this project and at the time we just graduated and money was particularly tight. We had to make compromises and be clever in a lot of ways to keep costs low while avoiding to cut too many corners. Some of the design and infrastructure choices may now seem unorthodox, but they were mostly made to accommodate our low budget.
@@ -79,7 +78,7 @@ The seams are still quite noticeable, but for a very early solution this wasn't 
 
 ## Aftermath
 
-On November 11 we made a reddit post to advertise our project. This is the only time we talked about it and still got 57 unique users with 1040 generated pictures in a few days.
+In November we made a reddit post to advertise our project. This is the only time we talked about it and still got 57 unique users with 1040 generated pictures in a few days.
 We had a few surprises with our small user base, only one user griefed by covering smaller images in the default room, while people continued existing images to form a collaborative collage.
 
 In the end, even if the project was short lived it still allowed us to learn a lot of different technologies, platforms and low level AI tinkering. Though the project is now defunct, you can still watch it in action in [this youtube playlist](https://www.youtube.com/watch?v=Rx_LL-SMYyw&list=PL7CV00e3X_pVhvbY91KX21bv3gSnBTzHN).
