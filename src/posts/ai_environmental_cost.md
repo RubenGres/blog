@@ -121,3 +121,4 @@ Or go all in and hope our AI overlords can solve our current life threatening gl
 
 ![xxlarge](/blog/assets/img/firecamp_meme.png)
 
+Thanks to Philippe and Capucine for proofreading and catching math errors before I published.
