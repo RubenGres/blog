@@ -1,5 +1,5 @@
 ---
-title: "Are you smarter than 304 matchboxes?"
+title: "Are You Smarter Than 304 Matchboxes?"
 date: 2025-04-29
 thumb: "menace.jpg"
 tags:
