@@ -61,10 +61,9 @@ We needed to store all the user generated images as well as their coordinates in
 The images (~10 GB) were stored in a [Cloud Storage](https://cloud.google.com/storage) bucket while their location (~100 KB) were in a [Cloud SQL](https://cloud.google.com/sql) database. Despite the coordinates dataset being 100,000 times smaller than the images, their database cost us 100 times more in the long run! If we were to do it again we would use a cheaper service like [Firestore](https://firebase.google.com/products/firestore) that is only paid on use…
 
 
-### Image generation models
+### Image generation and implementation details
 The first model that we used was the original Lattent Diffusion Model. We used the provided inference script that we hacked to add the inpainting support. Then with the release of Stable Diffusion 1.1 to 1.5 we could rely on the easier to use [Hugging Face's](https://huggingface.co) Diffuser pipelines and scrap a lot of our custom code. As time went on and models improved the generations were better and better.
 
-### Three different types of generations
 InfiniteCanvas had three modes of generations: New image, outpainting and image to image.
 
 ![large](/blog/assets/img/3_ui_tools.png)
