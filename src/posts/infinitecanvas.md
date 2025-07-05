@@ -23,12 +23,13 @@ We had no funding to work on this project and at the time we just graduated and 
 
 ## How the canvas worked
 The client is written in React with a lot of custom javascript to handle the canvas elements The website worked on mobile and desktop and we always made sure to keep compatibility for all devices.
-Stretching out in all three directions
-The leading idea behind the project was to have an infinite canvas that could stretch forever in all axes, including the z axis. This meant that we had to figure out a way to make an infinite zoom without degrading quality too much and keeping performances high.
 
-The first step was pretty simple, inspired by spatial loading in video games. We only loaded the images that were in view of the camera. This was an improvement, but since we could zoom in indefinitely, images could be very small on the user screens but still take a long time to load. The fix was simple, if an image wasn’t occupying a lot of space on screen, we replaced it with a coloured rectangle of the average image pixel value. Finally we just had to save images in different levels of details and load them according to their scale and the canvas was done!
+### Stretching out in all three directions
+The leading idea behind the project was to have an infinite canvas that could stretch forever in all axes. X and Y axis are straightforward, even if not really infinite as we are limited by the maximum values of a float, but it's pretty big nonetheless.
 
-Well to be honest, it was not really infinite as we were limited by the floating point precisions and their min and max values… But it was quite big nonetheless!
+Z axis was a bit harder to implement, we had to figure out a way to make an infinite zoom without degrading quality too much and keeping performances high.
+
+The first step was pretty simple, inspired by spatial loading in video games, we only loaded the images that were in view of the camera. This is an improvement, but since we can zoom in indefinitely, images can be very small on the user screens but still take a long time to load. The fix was simple, if an image isn't occupying a lot of space on screen, we replaced it with a coloured rectangle of the average image pixel value. Finally we just had to save images in different levels of details and load them according to their scale and the canvas is done!
 
 ## Sharing the canvas with others
 The canvas was shared for all users, this meant that the first time you logged in, you could see all of the generations that were made by others and add your own ideas to the canvas.
@@ -36,28 +37,34 @@ The canvas was shared for all users, this meant that the first time you logged i
 ![xxlarge](/blog/assets/img/2_ui_grid.png)
 
 We synced all users using web sockets broadcasting every new image that was generated so everyone would see the piece update in real time. If you wanted to start fresh we also had a room system where you could have a specific theme or just play with your friends.
-Running a backend service on a budget
-Choosing a Cloud Provider
+
+## Running a backend service on a budget
+
+### Choosing a Cloud Provider
+
 We went for Google Cloud for our cloud provider as it came with 300$ in free credits for new accounts and a friendly user interface. Again, no budget.
 
 We made two environments for the development and production of the backend and the client. These two environments shared a common database, not really best practices but at least we didn’t double our database costs. Google Cloud services made it easy to mirror our GitHub branches and deploy them to the correct environment with the right configuration.
-Avoiding GPU cost at all cost
-To run the image generation models, we needed GPU compute, and GPUs aren’t cheap even if the image generation model only took 3GB of VRAM.
 
-To avoid this cost, we came up with a method: freeloading Google Colab.
-The method was simple, every user had to run a small jupyter notebook on any machine with a GPU. To make this simpler, we made a google colab notebook as it is free for everyone with a Google account and really simple to set up. Running the script will give you an url to InfiniteCanvas using your device for the generation. And tadaaa, no GPU cost!
+### Avoiding GPU cost at all cost
 
-This worked for a while but Google Colab decided to ban AI image generation UIs in September of 2023, one year after the project launched. Still, if you are motivated enough, you could still download the notebook and run it on your machine.
+To run the image generation models, we needed GPU compute and even if the image generation model only took 3GB of VRAM, GPUs aren’t cheap.
 
-## Storing images and coordinates
+To dodge this cost, we came up with a simple plan: freeloading Google Colab.
+
+The method was simple, every user had to run a small jupyter notebook on any machine with a GPU. To make this simpler, we made a google colab notebook as it is free for everyone with a Google account and really simple to set up. Running the script will give you an url to **InfiniteCanvas** linked to your device for the generation. And just like that, no GPU cost!
+
+This worked for a while but Google Colab decided to ban AI image generation UIs in September 2023, one year after the project launched. Still, if you were motivated enough you could still download the notebook and run it on your machine.
+
+### Storing images and coordinates
 We needed to store all the user generated images as well as their coordinates in the canvas.
-The images (~10 GB) were stored in a Cloud Storage bucket while the location (~100 KB) were in a Cloud SQL database.
-Despite the coordinates dataset being 100,000 times smaller than the images, their database cost us 100 times more in the long run! If we were to do it again we would use a cheaper service like firestore that is only paid on use…
-Image generation models
-The first model that we used was the original Lattent Diffusion Model. We used the provided inference script that we hacked to add the inpainting support. Then with the release of Stable Diffusion 1.1 to 1.5 we could rely on the easier to use Huggingface’s Diffuser pipelines and scrap a lot of our custom code. As time went on and models improved the generations were better and better.
-[ avocado chair through the time ]
+The images (~10 GB) were stored in a Cloud Storage bucket while their location (~100 KB) were in a Cloud SQL database. Despite the coordinates dataset being 100,000 times smaller than the images, their database cost us 100 times more in the long run! If we were to do it again we would use a cheaper service like firestore that is only paid on use…
 
-## Three different types of generations
+
+### Image generation models
+The first model that we used was the original Lattent Diffusion Model. We used the provided inference script that we hacked to add the inpainting support. Then with the release of Stable Diffusion 1.1 to 1.5 we could rely on the easier to use Huggingface’s Diffuser pipelines and scrap a lot of our custom code. As time went on and models improved the generations were better and better.
+
+### Three different types of generations
 InfiniteCanvas had three modes of generations: New image, outpainting and image to image.
 
 ![large](/blog/assets/img/3_ui_tools.png)
@@ -69,17 +76,17 @@ Here is an example using a picture of a dog on a bench:
 2. We create a mask with noisy borders to hide the seam as much as possible
 3. We apply the model using the mask to generate the missing part of the image.
 
-In our application, one more step is needed to keep the infinite zoom possible. We cut out the masked region of the image so their original full size can be seen under it and maintain the infinite zoom. The final canvas was then a patchwork of webp, half cut images.
-
 ![xxlarge](/blog/assets/img/4_mask_input.png)
 ![xxlarge](/blog/assets/img/5_mask_output.png)
 
+In our application, one more step is needed to keep the infinite zoom possible. We cut out the masked region of the image so their original full size can be seen under it and maintain the infinite zoom. The final canvas resulted in a patchwork of half cut images overlayed on each other.
+
 The seams are still quite noticeable, but for a very early solution this wasn't so bad.
 
-## Aftermath
+## Sharing the website and aftermath
 
 In November we made a reddit post to advertise our project. This is the only time we talked about it and still got 57 unique users with 1040 generated pictures in a few days.
-We had a few surprises with our small user base, only one user griefed by covering smaller images in the default room, while people continued existing images to form a collaborative collage.
+We had a few surprises with our small user base, only one user griefed by covering smaller images in the default room, while people continued existing works to form a collaborative collage.
 
 In the end, even if the project was short lived it still allowed us to learn a lot of different technologies, platforms and low level AI tinkering. Though the project is now defunct, you can still watch it in action in [this youtube playlist](https://www.youtube.com/watch?v=Rx_LL-SMYyw&list=PL7CV00e3X_pVhvbY91KX21bv3gSnBTzHN).
 
