@@ -7,6 +7,8 @@ tags:
     - Art
 ---
 
+![xlarge](/blog/assets/img/0.mongolfiere.png)
+
 In the summer of 2022, diffusion models were beginning to become more and more capable. [DALLE 2](https://openai.com/dall-e-2) was just released by [OpenAI](https://openai.com) and a new open source competitor was just announced and seemed to be very promising : **[StableDiffusion](https://stability.ai/stable-diffusion)**.
 
 Excited to try this new technology, some of us from [LatentMinds](https://latentminds.co) decided to work on a project to facilitate the use of this technology and make it available to a broader audience.
