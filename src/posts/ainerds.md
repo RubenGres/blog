@@ -7,7 +7,10 @@ tags:
     - research
 ---
 
+![xlarge](/blog/assets/img/waifu.jpg)
+
 For the past few weeks, the LLM community has been buzzing about [mergekit](https://github.com/arcee-ai/mergekit), a tool that enables the merging of large language models. However, [the academic paper that introduced this method](https://arxiv.org/abs/2306.01708) overlooked a crucial detail: there's another community that didn't wait for academic validation to start merging machine learning models. These pioneers were the Stable Diffusion hobbyists, particularly those congregating on [CivitAI](https://civitai.com/).
+
 
 ## CivitAI: NSFW model dealer and creativity catalyst
 
@@ -31,6 +34,8 @@ I used to use AnythingV5 quite a while ago and clearly noticed the biases. I sin
 
 One of CivitAI's most successful models emerged from an unexpected source: the My Little Pony (MLP) fan community. PonyDiffusion, initially trained on MLP fan art, evolved into one of the platform's most popular and technically sophisticated models.
 
+![xxlarge](/blog/assets/img/ponydiff.jpg)
+
 What makes PonyDiffusion particularly noteworthy is its creator's commitment to rigorous methodology and transparent documentation. The developer spent weeks manually scoring over 30,000 images to implement human preferencesimilarly to RLHF (Reinforcement Learning from Human Feedback) for language models.
 
 The PonyDiffusion creator has been vocal about the challenges of working outside traditional research frameworks. In a notable blog post, they expressed frustration with dismissive attitudes from established companies:
@@ -43,7 +48,9 @@ This dynamic highlights a recurring theme: unconventional innovative communities
 
 The term "deepfake" is now ubiquitous, but its origins trace back to a single Reddit user. In 2017, a user named "deepfakes" began posting manipulated videos of celebrities, accompanied by detailed technical explanations of their methodology. This represented one of the first accessible implementations of face-swapping technology for general users.
 
-The academic community responded quickly, with researchers citing the Reddit posts in subsequent papers. This led to rapid iteration and improvement of the technique, eventually resulting in user-friendly tools that democratized deepfake creation.
+Reddit was quick to ban the subreddit but the academic community responded quickly, with researchers citing the Reddit posts in subsequent papers. This led to rapid iteration and improvement of the technique, eventually resulting in user-friendly tools that democratized deepfake creation.
+
+![xxlarge](/blog/assets/img/reddit_deepfakes_ban.jpg)
 
 The technology's trajectory from Reddit proof-of-concept to Hollywood production tool illustrates how grassroots innovation can reshape entire industries. Major studios now use similar techniques for digital resurrection of deceased actors and de-aging effects. The broader implications—including the commodification of actors' likenesses—continue to unfold.
 
