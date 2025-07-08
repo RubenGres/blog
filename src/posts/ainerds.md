@@ -9,7 +9,7 @@ tags:
 
 For the past few weeks, the LLM community has been buzzing about [mergekit](https://github.com/arcee-ai/mergekit), a tool that enables the merging of large language models. However, [the academic paper that introduced this method](https://arxiv.org/abs/2306.01708) overlooked a crucial detail: there's another community that didn't wait for academic validation to start merging machine learning models. These pioneers were the Stable Diffusion hobbyists, particularly those congregating on [CivitAI](https://civitai.com/).
 
-## CivitAI: The Underground Model Laboratory
+## CivitAI: NSFW model dealer and creativity catalyst
 
 CivitAI serves as a model-sharing platform where users distribute their fine-tuned Stable Diffusion models. The site hosts models trained on specific artistic styles, photorealistic techniques, and various aesthetic preferences. What sets CivitAI apart is its permissive stance on Not Safe For Work (NSFW) content—a policy that has led to some unexpected technical breakthroughs.
 
@@ -27,9 +27,9 @@ There is a CLEAR bias towards female character, nudity and NSFW content in all t
 I used to use AnythingV5 quite a while ago and clearly noticed the biases. I since moved to Dreamshaper4 for my go-to model when [Bernat](https://cunicode.com) introduced me to it on [https://wtfood.eu/about/](wtfood.eu), and the difference is really noticeable.
 
 
-## PonyDiffusion: From Fandom to Technical Innovation
+## PonyDiffusion: My Little Pony and AI Innovation
 
-One of CivitAI's most successful models emerged from an unexpected source: the My Little Pony fan community. PonyDiffusion, initially trained on MLP fan art, evolved into one of the platform's most popular and technically sophisticated models.
+One of CivitAI's most successful models emerged from an unexpected source: the My Little Pony (MLP) fan community. PonyDiffusion, initially trained on MLP fan art, evolved into one of the platform's most popular and technically sophisticated models.
 
 What makes PonyDiffusion particularly noteworthy is its creator's commitment to rigorous methodology and transparent documentation. The developer spent weeks manually scoring over 30,000 images to implement human preferencesimilarly to RLHF (Reinforcement Learning from Human Feedback) for language models.
 
@@ -39,7 +39,7 @@ The PonyDiffusion creator has been vocal about the challenges of working outside
 
 This dynamic highlights a recurring theme: unconventional innovative communities often faces skepticism from established institutions, despite demonstrable technical merit.
 
-## The DeepFake Origin Story: When Reddit Users Lead Research
+## The DeepFake Origin Story
 
 The term "deepfake" is now ubiquitous, but its origins trace back to a single Reddit user. In 2017, a user named "deepfakes" began posting manipulated videos of celebrities, accompanied by detailed technical explanations of their methodology. This represented one of the first accessible implementations of face-swapping technology for general users.
 
@@ -47,15 +47,15 @@ The academic community responded quickly, with researchers citing the Reddit pos
 
 The technology's trajectory from Reddit proof-of-concept to Hollywood production tool illustrates how grassroots innovation can reshape entire industries. Major studios now use similar techniques for digital resurrection of deceased actors and de-aging effects. The broader implications—including the commodification of actors' likenesses—continue to unfold.
 
-## Technical Breakthroughs from Anime-Focused Research
+## "Anime Research" Pioneer Work
 
-### Waifu2x: Pioneering Super-Resolution
+### Super-Resolution Anime Waifus 
 
-In 2015, the most effective image upscaling algorithm didn't emerge from Google, Microsoft, or other tech giants. Instead, Waifu2x was developed by a relatively unknown Japanese Kaggle competitor, motivated by the desire to enhance anime artwork quality.
+In 2015, the most effective image upscaling algorithm didn't emerge from Google, Microsoft, or other tech giants. Instead, [Waifu2x](https://www.waifu2x.net/) was developed by a relatively unknown Japanese Kaggle competitor, motivated by the desire to enhance anime artwork quality.
 
 The name itself, "waifu" is internet slang for anime characters, giing us come clues on the developer motivation. Despite its unconventional origins, Waifu2x represented a significant advance in super-resolution techniques and influenced subsequent research in the field.
 
-### r/AnimeResearch: Specialized ML Applications
+### r/AnimeResearch ...Specialized Applications
 
 The [r/AnimeResearch]((https://www.reddit.com/r/AnimeResearch/) subreddit, with approximately 4,000 members, focuses on machine learning for anime. While relatively small, this community has produced notable technical contributions.
 
@@ -63,9 +63,9 @@ Their most significant project, [DeepCreamPy](https://github.com/Deepshift/DeepC
 The community has also developed specialized tools like ["This Anime Does Not Exist"](https://thisanimedoesnotexist.ai/), a parody of [thispersondoesnotexist](https://thispersondoesnotexist.com/) focused on anime girls. After years of focus on GANs, they recently moved to diffusion models and soon enough many lewds models appeared in the wild.
 
 ## Implications for Academic Research
-These communities demonstrate important patterns for academic researchers to consider. Their ability to **iterate rapidly** without peer review constraints allows them to identify promising directions before formal research catches up. **Deep domain expertise** in specific content types enables them to spot subtle quality improvements that generalist researchers often miss. Direct user engagement drives **practical innovations** that address real usage patterns rather than theoretical benchmarks. Operating with limited resources, they develop **efficient techniques** that scale well to broader applications, showing how constraints can foster unexpected innovation.
+These communities demonstrate important patterns for academic researchers to consider. Their ability to **iterate rapidly** allows them to find promising directions before formal research catches up. **Deep domain expertise** in specific content types enables them to spot subtle quality improvements that generalist researchers often miss. Direct user engagement drives **practical innovations** that address real usage patterns rather than theoretical benchmarks. Operating with limited resources, they develop **efficient techniques** that scale well to broader applications, showing how constraints can foster unexpected innovation.
 
-## Final thoughts: The innovative power of the masses
+## Final thoughts
 
 While these communities may have unconventional motivations, their technical contributions are huge. The academic world would benefit from engaging more seriously with these alternative research groups.
 

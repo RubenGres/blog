@@ -12,7 +12,7 @@ In the summer of 2022, diffusion models were beginning to become more and more c
 Excited to try this new technology, some of us from [LatentMinds](https://latentminds.co) decided to work on a project to facilitate the use of this technology and make it available to a broader audience.
 
 This is how the [InfiniteCanvas](https://canvas.koll.ai) project started. A multi user, multi resolution shared canvas for image generation with infinite zoom and no borders.
-In the following weeks, [Philippe](https://www.linkedin.com/in/philippe-saad%C3%A9-26972b149/) and [Ruben](https://rubengres.com) spent long nights and questionable decisions to make this idea a reality.
+In the following weeks, we ([Philippe](https://www.linkedin.com/in/philippe-saad%C3%A9-26972b149/) and [Ruben](https://rubengres.com)) spent long nights and questionable decisions to make this idea a reality.
 
 ![xxlarge](/blog/assets/img/1.ui.png)
 
